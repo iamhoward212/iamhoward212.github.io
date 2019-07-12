@@ -1,0 +1,36 @@
+                .image{
+                    width: 100%;
+                }
+                .ratio_3_2{
+                    width:100%;
+                    padding-bottom: 66.67%;
+                    
+                    position: relative;
+                }
+                .ratio_3_2 > .ratio_content{
+                    position: absolute;
+                    width: 100%;
+                    height:100%;
+                } 
+                .ratio_16_9{
+                    width:100%;
+                    padding-bottom: 56.25%;
+                    
+                    position: relative;
+                }
+                .ratio_16_9 > .ratio_content{
+                    position: absolute;
+                    width: 100%;
+                    height:100%;
+                } 
+                .ratio_8_9{
+                    width:100%;
+                    padding-bottom: 112.5%;
+                    
+                    position: relative;
+                }
+                .ratio_8_9 > .ratio_content{
+                    position: absolute;
+                    width: 100%;
+                    height:100%;
+                } 
