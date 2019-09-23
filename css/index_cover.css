@@ -1,0 +1,40 @@
+           .index_cover{
+               background: url("https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+               background-position: center;
+               background-repeat:no-repeat;
+               background-size:cover;
+               height: 480px;
+               display: table;
+               width: 100%;
+           }
+           .index_cover .index_container{
+               display: table-cell;
+               vertical-align: middle;
+               text-align: center;
+               
+           }
+           .index_cover .index_container ._title{
+               margin:0;
+               margin-bottom: 56px;
+               font-size:72px;
+               color: #F8FAFF;
+               text-shadow: 0 2px 0 rgba(0,0,0,0.2);
+               
+           }
+            .index_cover .index_container .btn{
+                    border: none;
+                    padding: 8px 20px;
+                    background-color: white;
+                    border-radius: 12px;
+                    font-size: 18px;
+                    margin: 0 8px;
+                    box-shadow: 0 1px 0 0 rgba(0,0,0,0.24), 0 1.5px 0 0 rgba(0,0,0,0.12)
+           }
+           .index_cover .index_container .btn.btn_light{
+               background-color:#AAABD3 ;
+               color: white;
+           }
+           .index_cover .index_container .btn.btn_dark{
+               background-color:#353866 ;
+               color: white;
+           }
