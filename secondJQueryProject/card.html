@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+                  <meta charset="utf-8"/>
+          <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+        <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+      
+
+    </head>
+    <body>
+        <h1> JQuery Effect</h1>
+        
+        <style>
+            .card{
+                width: 300px;
+                height: 230px;
+                position:relative;
+                overflow: hidden;
+            }
+            .card>.card-image{
+                position: absolute;
+                 width: 300px;
+                
+            }
+            .card>.card-image>image{
+                width:100%;
+                height:230px;
+                vertical-align: bottom;
+            }
+            .card>.card-content{
+                position: absolute;
+                background-color: rgba(0,0,0,0.3);
+                color: white;
+                text-align: center;
+                margin: auto;
+                
+                bottom: 0px;
+                height: 0;
+            }
+        
+        </style>
+        
+         <div class="card">
+             <div class="card-image">
+            <image src="https://images.pexels.com/photos/1070030/pexels-photo-1070030.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></image>
+            
+            </div>
+             <div class="card-content">
+                 <div style="padding: 12px;">
+                 <p> 你能體諒 我有雨天 <br/>
+偶爾膽怯 你都了解 <br/>
+過去那些 大雨落下的瞬間 <br/>
+我突然發現 <br/>
+誰能體諒 我的雨天 <br/>
+所以情願 回你身邊 <br/>
+此刻腳步 會慢一些 <br/>
+                  </p>
+                 </div>     
+            </div>
+        </div>
+        <script>
+          $(".card").mouseenter(function(){
+              $('.card-content').stop(true,false).animate({height:"100%"},1000);
+          }).mouseleave(function(){
+              $('.card-content').stop(true,false).animate({height:"0%"},1000);
+          })
+            
+        </script>
+        
+    </body>
+    <script>
+         
+    
+    
+    
+    </script>
+</html>

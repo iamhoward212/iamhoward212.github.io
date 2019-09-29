@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <title>響應式網站 練習</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css"> 
+        <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Macondo">
+        <!-- 上面2個是中英文字體-->
+
+         
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        
+
+        <script src="https://kit.fontawesome.com/951b56ff70.js"></script>   
+        <!-- 上面是fontawesome cdn-->
+        <link rel="stylesheet" type="text/css" href="css/nav.css">
+        <link rel="stylesheet" type="text/css" href="css/grid.css">
+        <link rel="stylesheet" type="text/css" href="css/index_cover.css">
+        <link rel="stylesheet" type="text/css" href="css/hidden.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/ratio.css">
+        <link rel="stylesheet" type="text/css" href="css/card.css">
+        <link rel="stylesheet" type="text/css" href="css/player.css">
+          <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <script src="js/jquery-3.4.1.min.js"></script>
+             <script src="scoll.js"></script> 
+        
+    
+    </head>
+    <body>
+        
+<!--
+        <div class="row">
+             <div class="col-phone-100 col-tablet-50" style="background-color: red;height:50px;"></div>
+             <div class="col-phone-100 col-tablet-50" style="background-color: blue;height:50px;"></div>
+        </div>
+-->
+       
+        <header>
+           <nav class="nav">
+               <ul class="nav-list">
+                   <li class="nav-list-item"><a href="index.html">回首頁</a></li>
+                   <li class="nav-list-item"><a href="https://www.facebook.com">Facebook</a></li>
+                   <li class="nav-list-item"><a href="https://www.google.com">Google</a></li>
+                   <li class="nav-list-item"><a href="https://progressbar.tw">Progress Bar</a></li>
+               </ul>
+               <button type="button" class="nav-button">
+                   <i class="fas fa-bars"></i>
+               </button>
+           </nav>
+        </header> 
+        
+        <main>
+            <section>
+             <!--首頁標語-->
+                <div class="row">
+                    <div class="col-phone-100">
+                       <div class='index_cover'>
+                          <div class="index_container">
+                              <h1 class="_title">響應式網站</h1>  
+                              <div>
+                                   <button type="button" class="btn btn_light">登入</button>
+                                    <button type="button" class="btn btn_dark">註冊</button>
+                              </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                  
+             <!--cards-->
+               <div class="container ">
+                <div class="row">
+                    <div class="col-phone-100 col-tablet-50">
+                       <div class="card mdl-shadow-2dp">
+                            <div class="_image">
+                                <div class="ratio_3_2">  
+                                    <img class="ratio_content" src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                                </div>       
+                            </div>
+                            <div class="_content ">
+                                <h4 class="_title">
+                                    響應式網頁
+                                </h4>
+                                <p class="_detail cc">
+                                    響應式網頁設計（英語：Responsive web design，通常縮寫為RWD），或稱自適應網頁設計、回應式網頁設計、對應式網頁設計。 是一種網頁設計的技術做法，該設計可使網站在不同的裝置（從桌面電腦顯示器到行動電話或其他行動產品裝置）上瀏覽時對應不同解析度皆有適合的呈現，減少使用者進行縮放、平移和捲動等操作行為。
+
+對於網站設計師和前端工程師來說，有別於過去需要針對各種裝置進行不同的設計，使用此種設計方式將更易於維護網頁。
+
+
+                                    
+                                </p>
+                            </div>
+                            <div class="_action">
+                                <div class="_action_content">
+                                    <a class="_link" href="https://zh.wikipedia.org/wiki/%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1">
+                                        <button class="btn" type="button">閱讀更多
+                                        </button>
+                                    </a>
+                                </div>    
+                            </div>
+                       </div>
+                    </div> 
+                    <div class="col-phone-100 col-tablet-50">
+                        <div class="card mdl-shadow-2dp">
+                            <div class="_image">
+                                <div class="ratio_3_2">  
+                                    <img class="ratio_content" src="https://images.pexels.com/photos/336372/pexels-photo-336372.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                                </div>       
+                            </div>
+                            <div class="_content">
+                                <h4 class="_title">
+                                    為何使用響應式網頁呢?
+                                </h4>
+                                <p class="_detail">
+                                使用者可以使用單一網址，以更輕鬆的方式分享及連結到您的內容。<br/>
+                                可協助 Google 的演算法為網頁正確指定索引編列屬性，不需要發送訊息指明既有的相對應桌面版/行動版網頁。<br/>
+                                無需維護多個內容相同的網頁，減少工程師的處理時間。<br/>
+                                降低行動版網站發生常見錯誤的機率。
+                                
+                                </p>
+                                
+                            </div>
+                            <div class="_action">
+                                <div class="_action_content">
+                                    <a class="_link"  href="https://developers.google.com/search/mobile-sites/mobile-seo/responsive-design">
+                                        <button class="btn" type="button">閱讀更多
+                                        </button>
+                                    </a>
+                                </div>    
+                            </div>
+                       </div>
+                    
+                    </div>
+                </div>
+               </div>
+            </section>
+            <section>
+            <!--video player-->
+               <div class="container _appear">
+                <div class="row">
+                    <div class="col-phone-100 col-tablet-67" >
+                    <div class="video_player">
+                        <div class="ratio_16_9">  
+                        <iframe id="video_player" class="ratio_content" src="https://www.youtube.com/embed/2zxc27bvrO8" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-phone-100 col-tablet-33" >
+                        <div class="video-list-container mdl-shadow-2dp">
+                        <div class="ratio_8_9"> 
+                        <ul class="ratio_content video-list  _appear">
+                            <span>   </span><h4>最愛歌曲列表: </h4>
+                            <li class="_video" data-video="2zxc27bvrO8">Jay Chou 周杰倫 [最長的電影]</li>
+                            <li class="_video" data-video="DYptgVvkVLQ">Jay Chou 周杰倫 [晴天]</li>
+                            <li class="_video" data-video="uIWypArI73w">Jay Chou 周杰倫 [不能說的秘密]</li>
+                            <li class="_video" data-video="HK7SPnGSxLM">Jay Chou 周杰倫 [說好不哭]</li>
+                        </ul>
+                        </div>
+                            </div>
+                    </div>
+                    
+                </div>
+               </div>
+            </section>
+           
+            <section class="remove_padding">
+             <!--image links-->
+               <div class="container _appear">    
+                <div class="row">
+                    <div class="col-phone-100 col-tablet-50 col-desktop-25 hidden-on-tablet">
+                        <a href="https://progressbar.tw">
+                        <div class="ratio_3_2">  
+                             <img class="ratio_content" src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-phone-100 col-tablet-50 col-desktop-25 hidden-on-tablet">
+                        <a href="https://progressbar.tw">
+                        <div class="ratio_3_2">  
+                             <img class="ratio_content" src="https://images.pexels.com/photos/157888/fashion-glasses-go-pro-female-157888.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-phone-100 col-tablet-50 col-desktop-25 hidden-on-phone">
+                        <a href="https://progressbar.tw">
+                        <div class="ratio_3_2">  
+                             <img class="ratio_content" src="https://images.pexels.com/photos/417420/pexels-photo-417420.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-phone-100 col-tablet-50 col-desktop-25 hidden-on-phone">
+                        <a href="https://progressbar.tw">
+                        <div class="ratio_3_2">  
+                             <img class="ratio_content" src="https://images.pexels.com/photos/2380301/pexels-photo-2380301.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                        </div>
+                        </a>
+                    </div>
+                </div>
+               </div>
+            </section>
+        </main>
+        <style>
+           
+        </style>
+        <footer>
+            <div class="container">
+            <div class="row">
+                    <div class="col-phone-100 col-tablet-33">
+                      <div class="_container">
+                        <ul class="footer-links">
+                            <li>link1</li>
+                            <li>link1</li>
+                            <li>link1</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-phone-100 col-tablet-33" >
+                       <div class="_container">
+                        <ul class="footer-links">
+                            <li>link1</li>
+                            <li>link1</li>
+                            <li>link1</li>
+                        </ul>
+                       </div>
+                    </div>
+                    <div class="col-phone-100 col-tablet-33" >
+                     <div class="_container _center">
+                      <div class="row">
+                        <div class="col-phone-100 col-phone-33" >
+                          <i class="fab fa-facebook"></i>
+                          </div>
+                        <div class="col-phone-100 col-phone-33" >
+                          <i class="fab fa-twitter"></i>
+                          </div>
+                        <div class="col-phone-100 col-phone-33" >
+                          <i class="fab fa-youtube"></i>
+                          </div>
+                      </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+         <script>
+            $(function(){
+                $('.nav-button').click(function(){
+                
+                   $('.nav-list').slideToggle(500); 
+                })
+                $('._video').click(function(){
+                   var video=$(this).data('video');
+                   var url="https://www.youtube.com/embed/"+video;
+                   $('#video_player').attr('src',url);
+                })
+            })
+        </script>
+    </body>
+
+
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+                  <meta charset="utf-8"/>
+        <title>JQurey Effect : 動畫- 淡入效果</title>
+          <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+        <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+    </head>
+    
+    
+    
+    
+    <body>
+        <a href="../index.html" target="p2">回上頁</a>
+                  <h1> JQurey Effect : 動畫-淡入效果</h1>
+                  <button type="button"id="btn">動畫: 淡入</button>
+                    <h4>按下按鈕後下方會有淡入效果</h4>
+                   
+        
+        <style>
+            .box1{
+                width: 100%;
+                height:600px;
+                border: 1px;
+                background-color: blue;
+            }
+            .box2{
+                width: 100%;
+                height:500px;
+                border: 1px;
+                background-color: green;
+            }
+            .box3{
+                width: 300px;
+                height:300px;
+                border: 1px;
+                background-color: yellow;
+                position: relative;
+                
+            }
+            .box4{
+                opacity: 0; 
+                width: 50px; 
+                height: 50px;
+                background-color: black;position: absolute;
+                top:20%;
+                left: 20%;
+            }
+        </style>
+        
+                 <div class="box1"></div>
+        
+                 <div class="box2">
+                     <div class="box3">
+                         <div class="_appear box4">H1
+                         </div>
+                     </div>
+                 </div>
+                  
+          <script>
+              
+              
+        $(window).scroll(function(){
+           
+              var Pb={}; 
+              Pb.appear=function(elementsSelector,duration=1000){
+                      $(window).scroll(function(){
+                      
+                      var scrollTop=$(this).scrollTop();            //scrollTop  螢幕上所看到的最上方  離 網頁最上端 的距離
+                      var screenHeight=$(this).height();           //screenHeight  螢幕的寬度    
+                      var scrollBottom=scrollTop+screenHeight;    //scrollBottom  代表螢幕中最下方與網頁最上端的距離
+                      
+                      $(elementsSelector).each(function(index,element){
+                      var top=$(element).offset().top; 
+                      
+                      var height=$(element).height();
+                      var bottom=top+height;
+                        if( (  scrollBottom >=top  && scrollTop <=top )   //當網頁 由上往下 or 由下往上 滑動到黑色盒子該出現的位置時 黑色盒子會慢慢的顯現出來
+                          || ( scrollBottom >=bottom  && scrollTop <=bottom )){
+                               $(element).animate({opacity:1},duration)      
+                         }    
+                      })    
+                    }
+                  )}
+                Pb.opacityZero=function(elementsSelector){
+                    $(elementsSelector).css("opacity",0);
+                }
+                Pb.init=function(){
+                     Pb.opacityZero('._appear');
+                     Pb.appear('._appear',4000);
+                }
+  
+                $('#btn').click(function(){
+                    Pb.init();
+                })
+                  })
+        </script>
+    </body>
+</html>

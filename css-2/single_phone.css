@@ -1,0 +1,38 @@
+                   #section_5 {
+                       padding-top: 96px;
+                   }
+                   #section_5 ._info{
+                       color: white;
+                       font-size: 24px;
+                       font-weight: 600;
+                       
+                   }
+                   #section_5 ._info ._title{
+                        font-size: 48px;
+                       margin-bottom: 32px;
+                   }
+                    #section_5 ._info ._detail{
+                        
+                       margin-bottom: 48px;
+                   }
+                   #section_5 ._info ._detail .text_line{
+                        font-size: 24px;
+                   }
+                   #section_5 hr{
+                       border-top:1px solid #979797;
+                   }
+                   #section_5 .btn.btn-primary.btn-block{
+                        border-radius: 54px;
+                    margin:16px 0;
+                    padding: 12px;
+                   }
+                   #section_5 .phone_container{
+                       margin-left:48px;
+                   }
+                   #section_5 .rectangle-8{
+                       width: 430px;
+                       height: 863px;
+                       border-radius: 54px;
+                       background-color: #d8d8d8;
+                       border:solid 8px #9012fe;
+                   }

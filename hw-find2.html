@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>jQuery: 留言板-新增留言</title>
+        
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        
+
+      
+        <!-- Latest compiled and minified CSS -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+
+<script src="https://kit.fontawesome.com/951b56ff70.js"></script>   
+        <script src="scoll.js"></script> 
+        <script src="colorChange.js"></script> 
+        <script src="bgColorChange.js"></script> 
+        
+<link rel="stylesheet" href="./css-2/nav.css">
+<link rel="stylesheet" href="./css-2/section_bakcground.css"> 
+<link rel="stylesheet" href="./css-2/carousel.css">
+<link rel="stylesheet" href="./css-2/animal_section.css">   
+<link rel="stylesheet" href="./css-2/devices_section.css">   
+<link rel="stylesheet" href="./css-2/footer.css">         
+<link rel="stylesheet" href="./css-2/single_phone.css">     
+<link rel="stylesheet" href="./css-2/multiple_phone.css">   
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
+        
+    </head>
+    <body>
+        
+           <header>
+                <nav class="navbar navbar-default navbar-fixed-top">
+                        <div class="container">
+                          <!-- Brand and toggle get grouped for better mobile display -->
+                              <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                          
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#">
+                                        <img src="./image/Logo2.png" style="height:39px;">
+                                    </a>
+                              </div>
+                      
+                          <!-- Collect the nav links, forms, and other content for toggling -->
+                          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            
+                                <ul class="nav navbar-nav navbar-right">
+                                      
+                                      <li><a href="index.html">回首頁</a></li>
+                                      <li><a href="index7.html">RWD網頁</a></li>
+                                      <li><a href="./secondReact/index.html">React實例</a></li>
+                                    <li><a href="#">留言板</a></li>
+                                      
+                                      <li><a href="./secondJQueryProject/hw-card2.html">AJAX實例</a></li>
+
+
+                                </ul>
+                          </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                      </nav>
+
+           </header>
+           
+           <main id="wrapper" style="overflow: hidden;">
+              
+               <div id="section_1" class="jumbotron image_background">
+                   <div class="row">
+                   <div class="container">
+                   <div>
+                   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                      </ol>
+                       </div></div>
+                       </div></div></div>
+                      <!-- Wrapper for slides -->
+        <style>
+                 .mgBroad{
+                     background-color: chocolate; 
+                     color:white;
+                     border-radius: 10px 50px 50px 10px;
+                     height: 500px;
+                     width: 400px;
+                     padding: 10px 20px;
+                     box-shadow: 10px 10px 5px #888888;
+                 }
+            
+               .mgBroad .btn{
+                   background-color: #990000; 
+                   color:white;
+                   padding: 5px;
+                   border-radius: 5px;
+               }
+          </style>
+                       
+               <div id="section_2" class="jumbotron" style="background-color: white;">
+                     <h1>jQuery: 留言板-新增留言 </h1>  <br/>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="content_list">
+                                    
+                                 <ul class="comments">
+                                     <li class="comment mgBroad">
+                                          <div>
+                                                <h1>留言板   <i class="fas fa-sticky-note"></i></h1><hr/>
+                                                <label>請輸入內容</label>  
+                                                <input style="color:black;"type="text" />
+                                                <button type="button" class="btn reply_Button">新增留言</button><hr/>
+
+                                           </div>
+                                           <ul class="replies">
+                                                <li class="reply">test</li>  
+                                           </ul>
+                                     </li>
+                                   </ul>
+                                </div>
+                                </div>
+                            </div>
+                          <div class="col-xs-12 col-sm-6"></div>
+                     </div>
+                </div>
+                      
+               
+              <script>
+                          $(function(){
+                              $(".reply_Button").click(function(){
+                                  var div=$(".reply_Button").parent();
+                                  var input=div.children("input");
+                                  var value=input.val();
+
+                                  var newReply=$("<li></li>").html(value).addClass("reply");
+                                  input.val("");
+                                  var li=$(".reply_Button").parents(".comment");
+                                  var replies=li.find(".replies")
+                                   replies.append(newReply);
+
+                              });        
+                          });
+        
+              </script>
+               <footer id="main_footer" class="jumbotron"  style="background-color: #000000">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6" style="padding: 0">
+                                         <a class="navbar-brand" href="#">
+                                            <img src="./image/Logo2.png" style="height:39px;">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-2">
+                                        <div class="link_list"> 
+                                            <h5 class="_title">Group</h5>
+                                            <ul>
+                                                <li>link</li>
+                                                <li>link</li>
+                                                <li>link</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-2">
+                                        <div class="link_list"> 
+                                             <h5 class="_title">Group</h5>
+                                            <ul>
+                                                <li>link</li>
+                                                <li>link</li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix visible-xs-block"></div>
+ 
+                                    <div class="col-xs-6 col-sm-2">
+                                        <div class="link_list"> 
+                                            <h5 class="_title">Group</h5>
+                                            <ul>
+                                                <li>link</li>
+                                                <li>link</li>
+                                                <li>link</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="social_icons_block">
+                                    <div class="social_icons">
+                                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>  
+                                    </div>
+                                   <div class="social_icons">
+                                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>  
+                                    </div>
+                                    <div class="social_icons">
+                                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>  
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="subs">
+                                    <div class="sub_block">
+                                        <span class="_item">sub</span>
+                                        <span class="_item">sub</span>
+                                        <span class="_item">sub</span>
+                                        <span class="_item">sub</span>
+                                    </div>
+                                    <div  class="sub_block2">
+                                        <p class="_item">sub</p>
+                                        <p class="_item">sub</p>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                   </div>
+               </footer>
+           </main>
+    </body>
+    </html>
+
+

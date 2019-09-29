@@ -1,0 +1,66 @@
+                   #main_footer .link_list{
+                       margin-top: 16px;
+                       color:white;
+                   }
+                   #main_footer .link_list ._title{
+                      font-size: 1.4em;
+                   }
+                   #main_footer .link_list ul{
+                       list-style: none;
+                       padding-left: 0;
+                   }
+                    #main_footer .link_list ul li{
+                        font-size: 1.6em;
+                        line-height: 2.0em;
+                        font-weight: 300;
+                        
+                   }
+                   #main_footer .social_icons{
+                       color: white;
+                       display: inline-block;
+                   }
+                   #main_footer .social_icons .glyphicon{
+                       font-size: 24px;
+                       padding: 18px;
+                       border-radius: 50%;
+                       background-color: gray;
+                       color: white;
+                       margin-right: 16px;
+                   }
+                   #main_footer .social_icons_block{
+                        margin-top: 182px;
+                   }
+                   #main_footer .subs{
+                       margin-top: 32px;
+                   }
+                
+                
+                   #main_footer .subs .sub_block{
+                           display:inline-block;
+                            color: white;
+                           float: left;
+                       margin-top: 40px;
+                   }
+                   #main_footer .subs .sub_block ._item{
+                        margin-right: 8px;
+                       font-size: 1.0em;
+                       
+                   }
+                   #main_footer .subs .sub_block2{
+                       display:inline-block; 
+                       color: white;
+                       float: right;
+
+                   }
+                   #main_footer .subs .sub_block2 ._item{
+                       
+                       font-size: 1.0em;
+                   }
+                   
+                   @media(min-width:768px){
+                       #main_footer .social_icons_block{
+                           float: right;
+                           margin-top: 32px;
+                       }
+                      
+                   }

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+     <head>
+            <meta charset="utf-8" / >
+         <title>Javascript : 含稅金額計算表</title>
+    </head>
+    <body>
+        <a href="index.html" target="p2">回首頁</a>
+        <h1>Javascript : 含稅金額計算表</h1>
+       <div id="bigBox">
+        <div id="boxTitle"> 
+            <h1 style="text-align: center;">  含稅金額計算表</h1>
+           <ul> 
+               <li><p>免稅額(元)</p><li/>
+               <input id="taxFree"type="input" type="number" value="1000"/>
+               <li><p>稅率(%)</p></li>
+               <li><input id="inputTax"type="input" type="number" value="5"/></li>
+               <li><p>購買原始價格(元)</p></li>
+               <li><input id="inputValue"type="input" type="number" value="20"/></li><br/>
+               <button id="buttonC" type="button" onclick="clickMe();">計算</button>
+           </ul>
+               </div>    
+        <br/>
+        <div id="boxPrice">    
+            <h1 style="text-align: center;"> 計算後，含稅金額</h1>
+            <ul>
+                <li><p>含稅金額(元)</p></li>
+                <li><div id="price" >total amount=?</div><br/></li>
+                <li><p>稅金(元)</p></li>
+                <li><div id="taxPrice" >tax amount=?</div><br/></li>
+            <li><p>
+             購買金額低於免稅額(元)的部分，不需支付稅金。
+                </p></li>
+            </ul>
+        </div>
+        </div>
+    </body>
+    <style>
+        p:hover{
+            background-color: gray;
+            cursor: cell;
+        }
+        #bigBox{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+/*
+        h1{
+            text-shadow: 2px 2px 0px #008ae6;
+        }
+*/
+        body{
+            background-color: #ffffcc
+;
+        }
+        #boxTitle{
+            border:3px solid #666666;
+            border-radius: 20px 50px 50px 20px;
+            width:400px;
+            background-color: black;
+            color:white;
+            box-shadow: 10px 10px 0 #b3b3b3;
+            margin: 20px;
+        }
+        #boxPrice{
+            border:3px solid #666666;
+            border-radius: 20px 50px 50px 20px;
+            width:400px;
+            background-color: black;
+            color:white;
+             box-shadow: 10px 10px 0 #b3b3b3;
+            margin: 20px;
+            
+        }
+        #price{
+             border:3px solid #999999; 
+             width:170px;
+             color:white;   
+        }
+         #taxPrice{
+            border:3px solid #999999; 
+             width:170px;
+             color:white;  
+        }
+    </style>
+    <script>
+        
+        function clickMe(){
+            var taxRate=document.getElementById("inputTax");
+            var taxAmount=Number(taxRate.value);
+            var amount=document.getElementById("inputValue");
+            var amountNumber= Number(amount.value);
+            var taxFree=document.getElementById("taxFree");            
+            var taxFree=Number(taxFree.value);
+           
+            
+            if(amountNumber>=taxFree){
+                 var total=(amountNumber-taxFree)*(taxAmount/100)+amountNumber;
+                 var priceAmout=document.getElementById("price");
+                 priceAmout.innerHTML="$"+total;
+                var taxPrice=document.getElementById("taxPrice");
+                var taxtax=total-amountNumber;
+                taxPrice.innerHTML="$"+taxtax;
+            }else{
+                var total=Number(amount.value);
+                 var priceAmout=document.getElementById("price");
+                 priceAmout.innerHTML="$"+total;
+                var taxPrice=document.getElementById("taxPrice");
+                
+                taxPrice.innerHTML="$"+0;
+            };
+            };            
+         
+        
+       
+    </script>
+
+</html>

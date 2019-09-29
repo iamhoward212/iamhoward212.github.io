@@ -1,0 +1,66 @@
+<!DOCYPE html>
+<html>
+      <head>
+          
+          <title>Javacript:計算等差數列的和</title>
+      </head>
+      <body>
+          <a href="index.html" target="p2">回首頁</a>
+          <style>
+              body{
+                  background-color: antiquewhite;
+              }
+              .box{
+                  border: 1px solid gray;
+                  height:300px;
+                  width:300px;
+                  background-color: black;
+                  color:white;
+                  border-radius: 20px;
+                  padding: 20px;
+              }
+          </style>
+          <h1>Javacript:計算等差數列的和</h1>  
+          <div class="box">
+             <p>起始值 0</p>
+             <p>差值 1</p>
+             <p>終值</p>
+              <input id="inputNumber" type="number" value="10">
+             <button type="button" onclick="clickMe();">計算</button>
+             <p>計算結果</p>   
+             <p  id="sumResult">和</p>
+          
+          </div>   
+         
+      </body>
+      <style>
+          #sumResult{
+              border:1px solid blue; 
+              width:50px;
+          }
+      </style>
+      <script>
+          var calculater=function(){
+              var inputValue=document.getElementById("inputNumber").value;
+              console.log(inputValue)
+              var sum=0;
+              
+              
+               if( inputValue<=0  ){
+                      alert("end value should larger than 0");
+                }else{ 
+                        for(var i=0 ; i<=inputValue   ; i++ ){
+                           sum+=i;
+                        }
+                    document.getElementById("sumResult").innerHTML=sum;
+                      } 
+              }
+              
+          var clickMe=function(){
+              calculater();
+          }
+          
+          
+    </script>
+    
+</html>

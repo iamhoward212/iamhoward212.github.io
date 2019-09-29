@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <meta charset="utf-8"/>
+          <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+    </head>
+    <body>
+          <button type="button" class="btn">up button</button>
+        <button type="button" class="btn1">stop button</button>
+        <button type="button" class="btn2">down button</button>
+        <hr/>
+        <button type="button" class="btn3">slide toggle</button>
+        <hr/>
+        <button type="button" id="btn4"class="btn4">縮起來</button>
+        <button type="button" class="btn5">放出去</button>
+        <div id="div1" style="background-color:red;width:300px;height: 300px;" class="div1"></div>
+    
+    
+    
+    </body>         
+      <script>
+//           $(".btn").click(function(){
+//               $('.div1').fadeOut(1000).delay(3000).fadeIn(1000);
+//           })
+//------------------------------------------          
+//             $('.btn').click(function(){
+//                 $('.div1').hide(5000);
+//             })
+//             $('.btn2').click(function(){
+//                 $('.div1').stop();
+//             })
+//------------------------------------------------          
+//             $('.btn').click(function(){
+//                 $('.div1').slideUp(3000);
+//             })
+//             $('.btn1').click(function(){
+//                 $('.div1').stop(true);
+//             })
+//             $('.btn2').click(function(){
+//                 $('.div1').slideDown(3000);
+//             })
+//----------------------------------------
+//          $('.btn3').click(function(){
+//              $('.div1').slideToggle(3000);
+//          })
+//-----------------------------------------
+//          $('.btn3').click(function(){
+//              $('.div1').toggle(3000);
+//          })
+//---------------------------------------------
+//          $('.btn4').click(function(){
+//              $('.div1').animate({width:0},1000);
+//          })
+//          $('.btn5').click(function(){
+//              $(".div1").animate({width:300},1000);
+//           })
+//--------------------------------------------          
+//          $('.btn4').click(function(){
+//              $('.div1').animate({width:0},1000).animate({width:300},1000);
+//          })
+//-------------------------------------------------
+//          $('.btn4').click(function(){
+//              $('.div1').animate({backgroundColor:"#00ff00"},2000);
+//          })
+//           $('#btn4').click(function(){
+//                  $('#div1').animate({backgroundColor:"#00ffff"},1000)        
+//              })
+           $('#btn4').click(function(){
+                  $('#div1').animate({backgroundColor:"#00ff00"},1000).animate({backgroundColor:"#00ffff"},1000)        
+              })
+    
+    </script>
+
+
+
+</html>

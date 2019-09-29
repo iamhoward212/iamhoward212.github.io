@@ -1,0 +1,67 @@
+
+                #section_1{
+                     padding: 64px 0px
+                }
+                
+                .carousel .carousel-inner .item{
+                    height: 390px;
+                }
+            
+                 
+                .carousel .carousel-inner .item .carousel-caption{
+                   padding-bottom: 89px;
+                }
+                    
+                .carousel .carousel-control{
+                   background-image: none !important;   
+                }
+                .carousel-btn{
+                    border-radius: 54px;
+                    margin:16px 0;
+                    padding: 12px;
+                }
+                .btn-link.carousel-btn{
+                    border: solid 3px #979797;
+                    color: white;
+                    text-decoration: none;
+                }
+                .btn-link.carousel-btn:hover{
+                    border: solid 3px #888888;
+                }
+                 .carousel .carousel-inner .item .carousel-caption ._title{
+                    padding-bottom: 67px;
+                }
+                .carousel .glyphicon.glyphicon-chevron-left, .carousel .glyphicon.glyphicon-chevron-right{
+                    font-size: 70px;
+                    
+                }
+                 .carousel-indicators li.active{
+                                width:18px;
+                                height:18px;
+                                margin: 12px;
+                                    
+                            }
+                .carousel-indicators li{
+                     width:18px;
+                    height:18px;
+                    margin: 12px;
+                }
+                
+                @media(max-width:767px){
+                .carousel .carousel-inner .item .carousel-caption ._title{
+                    padding-bottom: 50px;
+                } 
+                .carousel .glyphicon.glyphicon-chevron-left, .carousel .glyphicon.glyphicon-chevron-right{
+                
+                    top:85%;
+                }
+                }
+
+                @media(min-width:768px){
+                #section_1{
+                        padding: 88px 0px
+                }
+                .carousel .carousel-inner .item .carousel-caption {
+                   padding-bottom: 112px;
+                }
+                }

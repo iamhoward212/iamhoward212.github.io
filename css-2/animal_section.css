@@ -1,0 +1,36 @@
+                    #section_2 ul._list{
+                       list-style-type:none;
+                       padding-left: 0;
+                   }
+                    #section_2 .content_list{
+                       color: blue;
+                   }
+                    #section_2 .cotent_list ._list ._detail{
+                       color: black;
+                   } 
+                    #section_2 .embed-responsive-1by1{
+                       padding-bottom: 100%;
+                   }
+                    #section_2 img.animal{
+                       object-fit: cover;
+                   }
+                    #section_2 .animal_cover{
+                    background-color: rgba(0,0,0,0.6);
+                       opacity: 0;
+                   
+                   }
+                    #section_2 .animal_cover:hover{
+                     opacity: 1;
+                   }
+                    #section_2 .animal_cover  .icon{
+                       color: white;
+                       font-size: 72px;
+                       top: 50%;
+                       left: 50%;
+                       transform: translate(-50%,-50%)
+                   }
+                   @media (min-width: 768px) { 
+                       #section_2 .cotent_list{
+                           margin-top: 144px;
+                       }
+                   }

@@ -1,0 +1,21 @@
+                   #section_4 .devices_img_block{
+                       margin-top: 32px; 
+                       padding: 16px;
+                       text-align: center;
+                       color: white;
+                   }
+                   #section_4 .devices_img_block ._title{
+                      margin-top: 58px;
+                   }
+
+                   #section_4 .devices_item{
+                       padding: 16px;
+                       text-align: center;
+                       color: white;
+                       margin-bottom: 56px;
+                   }
+                   #section_4 .devices_item ._item{
+                       font-size: 14px;
+                       margin-bottom: 32px;
+                   }
+               

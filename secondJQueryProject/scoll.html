@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+                  <meta charset="utf-8"/>
+          <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+        <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+    </head>
+    <body>
+                  <h1> JQurey Effect</h1>
+                  <button type="button"id="btn">Click</button>
+                 <div style="width: 100%;height:600px;border: 1px;background-color: red;">
+                     <div style="width: 300px;height:300px;border: 1px;background-color: yellow;position: relative;">
+                         <div id="gray_box"style="opacity: 0; width: 50px; height: 50px;background-color: gray;position: absolute;top:20%;left: 20%;">
+                         </div>
+                     </div>
+        
+                 </div>
+                 <div style="width: 100%;height:500px;border: 1px;background-color: green;">
+                     <div style="width: 300px;height:300px;border: 1px;background-color: yellow;position: relative;">
+                         <div id="black_box"style="opacity: 0; width: 50px; height: 50px;background-color: black;position: absolute;top:20%;left: 20%;">
+                         </div>
+                     </div>
+                 </div>
+                 <div style="width: 100%;height:600px;border: 1px;background-color: blue;"></div>
+                 <div style="width: 100%;height:500px;border: 1px;background-color: green;">
+                     <div style="width: 300px;height:300px;border: 1px;background-color: yellow;position: relative;">
+                         <div class="_appear"style="opacity: 0; width: 50px; height: 50px;background-color: black;position: absolute;top:20%;left: 20%;">H1
+                         </div>
+                     </div>
+                 </div>
+                  <div style="width: 100%;height:500px;border: 1px;background-color: green;">
+                     <div style="width: 300px;height:300px;border: 1px;background-color: yellow;position: relative;">
+                         <div class="_appear"style="opacity: 0; width: 50px; height: 50px;background-color: black;position: absolute;top:20%;left: 20%;">H2
+                         </div>
+                     </div>
+                 </div>
+            
+        
+        
+        
+        
+        
+    
+          <script>
+                  $(window).scroll(function(){
+                      
+//                      var scrollTop=$(this).scrollTop();            //scrollTop  螢幕上所看到的最上方  離 網頁最上端 的距離
+//                      var screenHeight=$(this).height();           //screenHeight  螢幕的寬度    
+//                      var scrollBottom=scrollTop+screenHeight;    //scrollBottom  代表螢幕中最下方與網頁最上端的距離
+//                      var top=$('#black_box').offset().top;       //top 黑色盒子最上緣 與 網頁最上端的距離
+//                           console.log(scrollBottom);           //當scrollBottom>top 時 黑色box的上緣會出現在螢幕的下方
+//                      if(   scrollBottom >=top  && scrollTop <=top          ){      //當網頁 往下滑動到黑色盒子該出現的位置時 黑色盒子會變色
+//                         $('#black_box').animate({backgroundColor:"#00ff00"},3000)
+//                         }
+//--------------------------------------------------------                      
+//                      if(   scrollBottom >=top  && scrollTop <=top          ){
+//                         $('#black_box').animate({opacity:1},1000)      //當網頁 往下滑動到黑色盒子該出現的位置時 黑色盒子會慢慢的顯現出來
+//                         }
+////-----------------------------------------------------------------                    
+//                  var height=$('#black_box').height();
+//                  var bottom=top+height;
+//                        if(   (scrollBottom >=top  && scrollTop <=top ) //當網頁 由上往下 or 由下往上 滑動到黑色盒子該出現的位置時 黑色盒子會慢慢的顯現出來
+//                          || (     scrollBottom >=bottom  && scrollTop <=bottom               )){
+//                         $('#black_box').animate({opacity:1},1000)      
+//                         }
+//------------------------------------------------------------------                      
+//                  function appear(elementsSelector){
+//                      $(window).scroll(function(){
+//                      
+//                      var scrollTop=$(this).scrollTop();            //scrollTop  螢幕上所看到的最上方  離 網頁最上端 的距離
+//                      var screenHeight=$(this).height();           //screenHeight  螢幕的寬度    
+//                      var scrollBottom=scrollTop+screenHeight;    //scrollBottom  代表螢幕中最下方與網頁最上端的距離
+//                      var top=$(elementsSelector).offset().top; 
+//                      
+//                      var height=$(elementsSelector).height();
+//                      var bottom=top+height;
+//                        if( (  scrollBottom >=top  && scrollTop <=top )   //當網頁 由上往下 or 由下往上 滑動到黑色盒子該出現的位置時 黑色盒子會慢慢的顯現出來
+//                          || ( scrollBottom >=bottom  && scrollTop <=bottom )){
+//                               $(elementsSelector).animate({opacity:1},2000)      
+//                         }
+//                       }
+//                  )}
+//                  
+//               appear('#gray_box');
+//               appear('#black_box');
+//--------------------------------------------------------    
+//                function appear(elementsSelector,duration=1000){
+//                      $(window).scroll(function(){
+//                      
+//                      var scrollTop=$(this).scrollTop();            //scrollTop  螢幕上所看到的最上方  離 網頁最上端 的距離
+//                      var screenHeight=$(this).height();           //screenHeight  螢幕的寬度    
+//                      var scrollBottom=scrollTop+screenHeight;    //scrollBottom  代表螢幕中最下方與網頁最上端的距離
+//                      
+//                      $(elementsSelector).each(function(index,element){
+//                      var top=$(element).offset().top; 
+//                      
+//                      var height=$(element).height();
+//                      var bottom=top+height;
+//                        if( (  scrollBottom >=top  && scrollTop <=top )   //當網頁 由上往下 or 由下往上 滑動到黑色盒子該出現的位置時 黑色盒子會慢慢的顯現出來
+//                          || ( scrollBottom >=bottom  && scrollTop <=bottom )){
+//                               $(element).animate({opacity:1},duration)      
+//                         }    
+//                      })    
+//                    }
+//                  )}
+//                appear('._appear',4000);
+//----------------------------------------------------------------------------              
+              var Pb={}; 
+              Pb.appear=function(elementsSelector,duration=1000){
+                      $(window).scroll(function(){
+                      
+                      var scrollTop=$(this).scrollTop();            //scrollTop  螢幕上所看到的最上方  離 網頁最上端 的距離
+                      var screenHeight=$(this).height();           //screenHeight  螢幕的寬度    
+                      var scrollBottom=scrollTop+screenHeight;    //scrollBottom  代表螢幕中最下方與網頁最上端的距離
+                      
+                      $(elementsSelector).each(function(index,element){
+                      var top=$(element).offset().top; 
+                      
+                      var height=$(element).height();
+                      var bottom=top+height;
+                        if( (  scrollBottom >=top  && scrollTop <=top )   //當網頁 由上往下 or 由下往上 滑動到黑色盒子該出現的位置時 黑色盒子會慢慢的顯現出來
+                          || ( scrollBottom >=bottom  && scrollTop <=bottom )){
+                               $(element).animate({opacity:1},duration)      
+                         }    
+                      })    
+                    }
+                  )}
+                Pb.opacityZero=function(elementsSelector){
+                    $(elementsSelector).css("opacity",0);
+                }
+                Pb.init=function(){
+                     Pb.opacityZero('._appear');
+                     Pb.appear('._appear',4000);
+                }
+//                $(function(){
+//                   Pb.init(); 
+//                })
+                
+                $('#btn').click(function(){
+                    Pb.init();
+                })   上到7
+        </script>
+    </body>
+</html>

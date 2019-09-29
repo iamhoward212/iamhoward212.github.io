@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <meta charset="utf-8"/>
+          <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+          <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+        
+           <link rel="stylesheet" type="text/css" href="hw2.css">
+        <script src="hw2.js"></script>
+    </head>
+    
+    <body>
+        <style>
+        
+            body{
+                background-color: antiquewhite;
+            }
+        
+        </style>
+        
+        <a href="../index.html">回首頁</a>
+        <h1> jQuery: 無限滾動 -以AJAX-GET抓取JSON資料，產生在網頁上</h1>
+        
+        <h1>Infinite Scrolling<br/><br/><br/><br/><br/><br/></h1>
+        <div style="display: table" id="main"></div>
+        <div id="loadingView" style="width:100%;margin:auto;text-align: center;">
+              <button id="loadingBtn" type="button" style="height:40px;margin: 12px;">讀取下一頁</button>
+        </div>
+      
+         <div class="card forClone" style="display: none;">
+             <div class="card-image">
+                  <image src="https://images.pexels.com/photos/2512388/pexels-photo-2512388.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></image>
+             </div>
+             <div class="card-content"> 
+                  <p class="innerContent"> content content content <br/>
+                       content content content<br/>
+                 </p>
+             </div>
+        </div>
+        <script>
+            var newPage=0;
+        function loadNewPage(page){
+            $.ajax({
+                headers:{
+                "accept":'application/json'
+                },
+               url:'auto'+page+'.json',
+                dataType:'json',
+                method:'GET',
+            }).done(function(data){
+                
+                var card=$('.forClone')[0];
+                 console.log(card);
+                
+                $(data).each(function(index,object){
+                var clone=$(card).clone(true).removeClass('forClone');
+                clone.find('.card-image img').attr("src",object.imgUrl);
+                clone.find('.card-content .innerContent').html(object.content);
+                clone.css("display","");
+                clone.css('opacity',0);
+                
+                    $(clone).insertBefore( $('#main').find('.card').first() ).animate({opacity:1},2000)
+                 })
+                $('#loadingView').slideUp(0);
+                // hide AJAX loader gif
+                
+            })
+            }
+            setInterval(loadNewPage,5000,newPage);
+        </script>
+        <script>
+        var page=1;
+        function loadPage(page){
+            $.ajax({
+                headers:{
+                "accept":'application/json'
+                },
+               url:'page'+page+'.json',
+                dataType:'json',
+                method:'GET',
+            }).done(function(data){
+                
+                var card=$('.forClone')[0];
+                 console.log(card);
+                
+                $(data).each(function(index,object){
+                var clone=$(card).clone(true).removeClass('forClone');
+                clone.find('.card-image img').attr("src",object.imgUrl);
+                clone.find('.card-content .innerContent').html(object.content);
+                clone.css("display","");
+                $('#main').append(clone);
+                 })
+                $('#loadingView').slideUp(0);
+                // hide AJAX loader gif
+                
+            })
+            }
+            $(window).scroll(function(){
+                var scrollTop=$(this).scrollTop();
+                var screenHeight=$(this).height();
+                var scrollBottom=scrollTop+screenHeight;
+                
+                $("#main").each(function(index,element){
+                   var top=$(element).offset().top;
+                   var height=$(element).height();
+                   var bottom=top+height;
+                    if(   scrollBottom>=   bottom ){
+                        $('#loadingView').slideDown(1000);
+                        // show AJAX loader gif
+                       }
+                 })
+            })
+            $(function(){
+               Card.init(); 
+                 $('#loadingView').slideUp(0);
+                $('#loadingBtn').click(function(){
+                    loadPage(page);
+                })
+                loadPage(page);
+            })
+        </script>
+    </body>

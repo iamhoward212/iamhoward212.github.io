@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <meta charset="utf-8"/>
+            <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    
+    </head>
+    <body>
+         <style>
+                             .mgBroad{
+                                 background-color: chocolate; 
+                                 color:white;
+                                 border-radius: 10px 50px 50px 10px;
+                                 height: 500px;
+                                 width: 400px;
+                                 padding: 10px 20px;
+                                 box-shadow: 10px 10px 5px #888888;
+                             }
+               .mgBroad .btn{
+                   background-color: #990000; 
+                   color:white;
+                   padding: 5px;
+                   border-radius: 5px;
+               }
+          </style>
+        <a href="index.html" target="p2">回上頁</a>
+           <div class="main_content">
+                <ul class="comments">
+                     <li class="comment mgBroad">
+                          <div>
+                                <h1>留言板</h1>
+                              <hr/>
+                              
+<!--                                <p>Description</p>-->
+                                <label>請輸入內容</label>  
+                                <input type="text" />
+                              
+<!--                                <button type="button btn" class="delete_Button">刪除</button>-->
+                                
+                              <button type="button" class="btn reply_Button">新增留言</button>
+                              <hr/>
+                             
+                           </div>
+                           <ul class="replies">
+                                <li class="reply">test</li>  
+                           </ul>
+                     </li>
+<!--
+                     <li class="comment">
+                          <div>
+                                <h3>Test Title</h3>
+                                <p>Description</p>
+                                <button type="button" class="delete_Button">delete</button>
+                                <button type="button" class="reply_Button">reply</button>
+                                <input type="text" />
+                           </div>
+                           <ul class="replies">
+                                <li class="reply">test</li>  
+                           </ul>
+                    </li>
+-->
+               </ul>
+          </div>
+          <script>
+                  $(function(){
+                      $(".reply_Button").click(function(){
+                          var div=$(".reply_Button").parent();
+                          var input=div.children("input");
+                          var value=input.val();
+                          
+                          var newReply=$("<li></li>").html(value).addClass("reply");
+                          input.val("");
+                          var li=$(".reply_Button").parents(".comment");
+                          var replies=li.find(".replies")
+                           replies.append(newReply);
+                          
+                      });        
+                  });
+        
+        </script>
+    
+    
+    
+    
+    </body>
+
+
+
+
+
+
+</html>
