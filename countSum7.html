@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <title>jQuery: 留言板-新增留言</title>
+        <title>Howard作品集: 等差數列計算</title>
         
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -58,13 +58,20 @@
                           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             
                                 <ul class="nav navbar-nav navbar-right">
-                                      <li> <a href="index.html" target="p2">回上頁</a></li>
-                                      <li><a href="#">輔助中心</a></li>
-                                      <li><a href="#">下載</a></li>
-                                      <li><a href="#">註冊</a></li>
-                                      <li><a href="#">登入</a></li>
+                                      
+                                      <li><a href="index.html">回首頁</a></li>
+                                      <li><a href="index7.html">RWD網頁</a></li>
+                                      <li><a href="./secondReact/hw-react9.html">React實例</a></li>
+                                      <li><a href="hw-find2.html">留言板</a></li>
+                                      <li><a href="table7.html" target="p2">新增表格</a></li>
+                                      <li><a href="ajaxCase.html">AJAX實例</a></li>
+                                      <li><a href="tax_count7.html"  target="p2">稅金計算表</a></li>
+                                      <li><a style="color:gray" target="p2" >等差數列的和</a></li>
+
+
 
                                 </ul>
+                               
                           </div><!-- /.navbar-collapse -->
                         </div><!-- /.container-fluid -->
                       </nav>
@@ -79,102 +86,146 @@
                    <div>
                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                       <!-- Indicators -->
-                      <ol class="carousel-indicators">
+                      <!-- <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                      </ol>
+                      </ol> -->
                        </div></div>
                        </div></div></div>
                       <!-- Wrapper for slides -->
-       
+        <style>
+                 .mgBroad{
+                     background-color: chocolate; 
+                     color:white;
+                     border-radius: 10px 50px 50px 10px;
+                     height: 500px;
+                     width: 200px;
+                     padding: 5px 10px;
+                     box-shadow: 10px 10px 5px #888888;
+                 }
+            
+               .mgBroad .btn{
+                   background-color: #990000; 
+                   color:white;
+                   padding: 5px;
+                   border-radius: 5px;
+               }
+          </style>
                        
                <div id="section_2" class="jumbotron" style="background-color: white;">
-                     <h1>......... </h1>  <br/>
+                   <h1 >Javascript: 等差數列計算</h1>
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
                                 <div class="content_list">
-                                    
-                                 <ul class="comments">
-                                     <li class="comment mgBroad">
-                                          <div>
-                                               
-
-                                           </div>
-<!--
-                                           <ul class="replies">
-                                                <li class="reply">test</li>  
-                                           </ul>
--->
-                                     </li>
-                                   </ul>
+                                 
+          <style>
+             
+              .box{
+                  border: 1px solid gray;
+                  height:300px;
+                  width:300px;
+                  background-color: #900c3f;
+                  color:white;
+                  border-radius: 20px;
+                  padding: 20px;
+              }
+          </style>
+          <h1>輸入終值，<br/>算出等差數列的和</h1>  
+          <div class="box">
+             <p>起始值 0</p>
+             <p>差值 1</p>
+             <p>請輸入終值</p>
+              <input style="color:black;"id="inputNumber" type="number" value="10">
+             <button class="btn btn-default"type="button" style="color:black;" onclick="clickMe();">計算</button>
+             <p>計算結果</p>   
+             <p  id="sumResult">和</p>
+          
+          </div>   
+            
+                                 
                                 </div>
                                 </div>
                             </div>
                           <div class="col-xs-12 col-sm-6"></div>
                      </div>
                 </div>
-                      
+                  <style>
+          #sumResult{
+              border:1px solid blue; 
+              width:50px;
+          }
+      </style>      
                
-<!--
               <script>
-                          $(function(){
-                              $(".reply_Button").click(function(){
-                                  var div=$(".reply_Button").parent();
-                                  var input=div.children("input");
-                                  var value=input.val();
-
-                                  var newReply=$("<li></li>").html(value).addClass("reply");
-                                  input.val("");
-                                  var li=$(".reply_Button").parents(".comment");
-                                  var replies=li.find(".replies")
-                                   replies.append(newReply);
-
-                              });        
-                          });
+                        var calculater=function(){
+              var inputValue=document.getElementById("inputNumber").value;
+              console.log(inputValue)
+              var sum=0;
+              
+              
+               if( inputValue<=0  ){
+                      alert("end value should larger than 0");
+                }else{ 
+                        for(var i=0 ; i<=inputValue   ; i++ ){
+                           sum+=i;
+                        }
+                    document.getElementById("sumResult").innerHTML=sum;
+                      } 
+              }
+              
+          var clickMe=function(){
+              calculater();
+          }
+        
         
               </script>
--->
-               <footer id="main_footer" class="jumbotron"  style="background-color: #000000">
+                  <footer id="main_footer" class="jumbotron"  style="background-color: #000000">
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class="col-xs-12 col-sm-6" style="padding: 0">
+                                    <div class="col-xs-12 col-sm-3" style="padding: 0">
                                          <a class="navbar-brand" href="#">
                                             <img src="./image/Logo2.png" style="height:39px;">
                                         </a>
                                     </div>
-                                    <div class="col-xs-6 col-sm-2">
+                                    
+
+                                    
+                                    <div class="col-xs-6 col-sm-3">
                                         <div class="link_list"> 
-                                            <h5 class="_title">Group</h5>
+                                            <h5 class="_title">作品集1</h5>
                                             <ul>
-                                                <li>link</li>
-                                                <li>link</li>
-                                                <li>link</li>
+                                                <li><a style="color: gray;" href="index.html" target="p2">Bootstrap網站</a></li>
+                                                <li><a style="color: gray;" href="index7.html" target="p2">RWD網站</a></li>
+                                                <li><a style="color: gray;" href="./secondReact/hw-react9.html" target="p2">React實例</a></li>
+                                                <li><a style="color: gray;" href="hw-find2.html" target="p2">留言板</a></li>
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-2">
+                                    <div class="col-xs-6 col-sm-3">
                                         <div class="link_list"> 
-                                             <h5 class="_title">Group</h5>
+                                             <h5 class="_title">作品集2</h5>
                                             <ul>
-                                                <li>link</li>
-                                                <li>link</li>
+                                                <li><a style="color: gray;"href="table7.html" target="p2">新增表格</a></li>
+                                                <li><a style="color: gray;"href="ajaxCase.html" target="p2">AJAX實例</a></li>
+                                                <li><a style="color: gray;"href="tax_count7.html" target="p2">含稅金額計算表</a></li>
+                                                 <li><a style="color: gray;"href="countSum7.html" target="p2" >等差數列計算</a></li>
                                                 
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="clearfix visible-xs-block"></div>
  
-                                    <div class="col-xs-6 col-sm-2">
+                                    <div class="col-xs-6 col-sm-3">
                                         <div class="link_list"> 
-                                            <h5 class="_title">Group</h5>
+                                            <h5 class="_title">社群平台</h5>
                                             <ul>
-                                                <li>link</li>
-                                                <li>link</li>
-                                                <li>link</li>
+                                                <li style="color: gray;">Facebook</li>
+                                                <li style="color: gray;">Instagram</li>
+                                                <li style="color: gray;">Youtube</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -183,10 +234,10 @@
                             <div class="col-xs-12 col-sm-6">
                                 <div class="social_icons_block">
                                     <div class="social_icons">
-                                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>  
+                                         <span class="glyphicon glyphicon-home" aria-hidden="true"></span>  
                                     </div>
                                    <div class="social_icons">
-                                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>  
+                                         <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  
                                     </div>
                                     <div class="social_icons">
                                          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>  
@@ -199,14 +250,14 @@
                             <div class="col-xs-12">
                                 <div class="subs">
                                     <div class="sub_block">
-                                        <span class="_item">sub</span>
-                                        <span class="_item">sub</span>
-                                        <span class="_item">sub</span>
-                                        <span class="_item">sub</span>
+                                        <span class="_item" style="color: gray;">指南</span>
+                                        <span class="_item" style="color: gray;">使用條款</span>
+                                        <span class="_item" style="color: gray;">銷售條款</span>
+                                        <span class="_item" style="color: gray;">隱私權政策</span>
                                     </div>
                                     <div  class="sub_block2">
-                                        <p class="_item">sub</p>
-                                        <p class="_item">sub</p>
+                                        <p style="color: gray;"class="_item">聯絡方式: </p>
+                                        <p style="color: gray;"class="_item">EMAIL: iamhoward212@gmail.com</p>
                                     </div>
                                 </div>
                                
