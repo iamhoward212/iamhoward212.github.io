@@ -3,8 +3,13 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <title>Howard作品集: jQuery 留言板-新增留言</title>
+        <title>Howard作品集:React實例</title>
         
+        
+        
+       
+         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -23,16 +28,16 @@
 <script src="https://kit.fontawesome.com/951b56ff70.js"></script>   
         <script src="scoll.js"></script> 
         <script src="colorChange.js"></script> 
-        <!-- <script src="bgColorChange.js"></script>  -->
+        <script src="bgColorChange.js"></script> 
         
-<link rel="stylesheet" href="./css-2/nav.css">
-<link rel="stylesheet" href="./css-2/section_bakcground.css"> 
-<link rel="stylesheet" href="./css-2/carousel2.css">
-<link rel="stylesheet" href="./css-2/animal_section.css">   
-<link rel="stylesheet" href="./css-2/devices_section.css">   
-<link rel="stylesheet" href="./css-2/footer.css">         
-<link rel="stylesheet" href="./css-2/single_phone.css">     
-<link rel="stylesheet" href="./css-2/multiple_phone.css">   
+<link rel="stylesheet" href="../css-2/nav.css">
+<link rel="stylesheet" href="../css-2/section_bakcground.css"> 
+<link rel="stylesheet" href="../css-2/carousel2.css">
+<link rel="stylesheet" href="../css-2/animal_section.css">   
+<link rel="stylesheet" href="../css-2/devices_section.css">   
+<link rel="stylesheet" href="../css-2/footer.css">         
+<link rel="stylesheet" href="../css-2/single_phone.css">     
+<link rel="stylesheet" href="../css-2/multiple_phone.css">   
       <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
         
     </head>
@@ -50,7 +55,7 @@
                                           <span class="icon-bar"></span>
                                     </button>
                                     <a class="navbar-brand" href="#">
-                                        <img src="./image/Logo2.png" style="height:39px;">
+                                        <img src="../image/Logo2.png" style="height:39px;">
                                     </a>
                               </div>
                       
@@ -59,14 +64,14 @@
                             
                                 <ul class="nav navbar-nav navbar-right">
                                       
-                                      <li><a href="index.html">回首頁</a></li>
-                                      <li><a href="index7.html">RWD網頁</a></li>
-                                      <li><a href="./secondReact/hw-react9.html">React實例</a></li>
-                                      <li><a style="color:gray;" href="#">留言板</a></li>
-                                      <li><a href="table7.html" target="p2">新增表格</a></li>
-                                      <li><a href="ajaxCase.html">AJAX實例</a></li>
-                                     <li><a href="tax_count7.html"  target="p2">稅金計算表</a></li>
-                                      <li><a href="countSum7.html"  target="p2" >等差數列的和</a></li>
+                                      <li><a href="../index.html">回首頁</a></li>
+                                      <li><a href="../index7.html">RWD網頁</a></li>
+                                      <li><a style="color:gray;" >React實例</a></li>
+                                      <li><a  href="../hw-find2.html">留言板</a></li>
+                                      <li><a href="../table7.html" target="p2">新增表格</a></li>
+                                      <li><a href="../ajaxCase.html">AJAX實例</a></li>
+                                     <li><a href="../tax_count7.html"  target="p2">稅金計算表</a></li>
+                                      <li><a href="../countSum7.html"  target="p2" >等差數列的和</a></li>
 
 
                                 </ul>
@@ -79,7 +84,7 @@
 
            </header>
            
-           <main id="wrapper" style="overflow: hidden;background-color: #a379cb;">
+           <main id="wrapper" style="overflow: hidden;">
               
                <div id="section_1" class="jumbotron image_background">
                    <div class="row">
@@ -96,70 +101,45 @@
                        </div></div></div>
                       <!-- Wrapper for slides -->
         <style>
-                 .mgBroad{
-                     background-color: #A53154 ; 
-                     color:white;
-                     border-radius: 10px 20px 20px 10px;
-                     height: 400px;
-                     width: 250px;
-                     padding: 5px 10px;
-                     box-shadow: 10px 10px 5px #888888;
-                 }
             
-               .mgBroad .btn{
-                   background-color: #990000; 
-                   color:white;
-                   padding: 5px;
-                   border-radius: 5px;
-               }
-          </style>
+        </style>
                        
-               <div id="section_2" class="jumbotron" style="background-color: #a379cb;padding: 0">
-                     <h1 style="font-size: 36px;color:white;">jQuery: 留言板-新增留言 </h1>  <br/>
+               <div id="section_2" class="jumbotron" style="background-color: #a379cb;color:white;">
+                     <h1 style="font-size: 36px;">React實例 :</h1>  <br/>
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
                                 <div class="content_list">
                                     
-                                 <ul class="comments" style="padding-left: 10px;">
-                                     <li class="comment mgBroad">
-                                          <div>
-                                                <h1>留言板   <i class="fas fa-sticky-note"></i></h1><hr/>
-                                                <label>請輸入內容</label>  
-                                                <input style="color:black;"type="text" />
-                                                <button type="button" class="btn reply_Button btn-primary">新增留言</button><hr/>
-
-                                           </div>
-                                           <ul class="replies">
-                                                <li class="reply">test</li>  
-                                           </ul>
+                                 <ul class="comments">
+                                     <li class="comment ">
+                                           <h2 style="color:white;">郵遞區號選擇器</h2> 
+                                            <ul >
+                                                <li><h2 style="color:white;font-size: 24px;">以React達到郵遞區號選擇器的效果</h2></li>
+                                                <li><h2 style="color:white;font-size: 24px;">加入外觀樣式 Google Material Component Web React</h2></li>
+                                                <li><h2 style="color:white;font-size: 24px;">當發票類型，郵寄選項，郵遞區號，地址都填入後，SUBMIT按鈕會出現 </h2></li>
+                                            </ul>    
+                                            <div >  <div id="app"></div> </div>           
+                                          
                                      </li>
                                    </ul>
                                 </div>
                                 </div>
                             </div>
-                          <div class="col-xs-12 col-sm-6"></div>
+                          <div class="col-xs-12 col-sm-6">
+                           
+                          </div>
                      </div>
                 </div>
-                      
-               
-              <script>
-                          $(function(){
-                              $(".reply_Button").click(function(){
-                                  var div=$(".reply_Button").parent();
-                                  var input=div.children("input");
-                                  var value=input.val();
-
-                                  var newReply=$("<li></li>").html(value).addClass("reply");
-                                  input.val("");
-                                  var li=$(".reply_Button").parents(".comment");
-                                  var replies=li.find(".replies")
-                                   replies.append(newReply);
-
-                              });        
-                          });
-        
-              </script>
+                <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+                <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+           <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+           
+           
+                <script src="js/App.js"></script> 
+                
+     
                   <footer id="main_footer" class="jumbotron"  style="background-color: #000000">
                     <div class="container">
                         <div class="row">
@@ -167,7 +147,7 @@
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-3" style="padding: 0">
                                          <a class="navbar-brand" href="#">
-                                            <img src="./image/Logo2.png" style="height:39px;">
+                                            <img src="../image/Logo2.png" style="height:39px;">
                                         </a>
                                     </div>
                                     
@@ -177,10 +157,10 @@
                                         <div class="link_list"> 
                                             <h5 class="_title">作品集1</h5>
                                             <ul>
-                                                <li><a style="color: gray;" href="index.html" target="p2">Bootstrap網站</a></li>
-                                                <li><a style="color: gray;" href="index7.html" target="p2">RWD網站</a></li>
-                                                <li><a style="color: gray;" href="./secondReact/hw-react9.html" target="p2">React實例</a></li>
-                                                <li><a style="color: gray;" href="hw-find2.html"target="p2">留言板</a></li>
+                                                <li><a style="color: gray;" href="../index.html" target="p2">Bootstrap網站</a></li>
+                                                <li><a style="color: gray;" href="../index7.html" target="p2">RWD網站</a></li>
+                                                <li><a style="color: gray;" target="p2">React實例</a></li>
+                                                <li><a style="color: gray;" href="../hw-find2.html"target="p2">留言板</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -188,10 +168,10 @@
                                         <div class="link_list"> 
                                              <h5 class="_title">作品集2</h5>
                                             <ul>
-                                                <li><a style="color: gray;"href="table7.html" target="p2">新增表格</a></li>
-                                                <li><a style="color: gray;"href=" ajaxCase.html" target="p2">AJAX實例</a></li>
-                                                <li><a style="color: gray;"href="tax_count7.html" target="p2">含稅金額計算表</a></li>
-                                                 <li><a style="color: gray;"href="countSum7.html" target="p2" >等差數列計算</a></li>
+                                                <li><a style="color: gray;"href="../table7.html" target="p2">新增表格</a></li>
+                                                <li><a style="color: gray;"href="../ajaxCase.html" target="p2">AJAX實例</a></li>
+                                                <li><a style="color: gray;"href="../tax_count7.html" target="p2">含稅金額計算表</a></li>
+                                                 <li><a style="color: gray;"href="../countSum7.html" target="p2" >等差數列計算</a></li>
                                                 
                                             </ul>
                                         </div>
