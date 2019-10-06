@@ -3,8 +3,13 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <title>Howard作品集: jQuery 留言板-新增留言</title>
+        <title>Howard作品集:SCSS實例</title>
         
+        
+        
+       
+         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -23,16 +28,17 @@
 <script src="https://kit.fontawesome.com/951b56ff70.js"></script>   
         <script src="scoll.js"></script> 
         <script src="colorChange.js"></script> 
-        <!-- <script src="bgColorChange.js"></script>  -->
+        <script src="bgColorChange.js"></script> 
+        <link rel="stylesheet" href="css/tool.css">
         
-<link rel="stylesheet" href="./css-2/nav.css">
-<link rel="stylesheet" href="./css-2/section_bakcground.css"> 
-<link rel="stylesheet" href="./css-2/carousel2.css">
-<link rel="stylesheet" href="./css-2/animal_section.css">   
-<link rel="stylesheet" href="./css-2/devices_section.css">   
-<link rel="stylesheet" href="./css-2/footer.css">         
-<link rel="stylesheet" href="./css-2/single_phone.css">     
-<link rel="stylesheet" href="./css-2/multiple_phone.css">   
+<link rel="stylesheet" href="../css-2/nav.css">
+<link rel="stylesheet" href="../css-2/section_bakcground.css"> 
+<link rel="stylesheet" href="../css-2/carousel2.css">
+<link rel="stylesheet" href="../css-2/animal_section.css">   
+<link rel="stylesheet" href="../css-2/devices_section.css">   
+<link rel="stylesheet" href="../css-2/footer.css">         
+<link rel="stylesheet" href="../css-2/single_phone.css">     
+<link rel="stylesheet" href="../css-2/multiple_phone.css">   
       <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
         
     </head>
@@ -50,7 +56,7 @@
                                           <span class="icon-bar"></span>
                                     </button>
                                     <a class="navbar-brand" href="#">
-                                        <img src="./image/Logo2.png" style="height:39px;">
+                                        <img src="../image/Logo2.png" style="height:39px;">
                                     </a>
                               </div>
                       
@@ -59,15 +65,15 @@
                             
                                 <ul class="nav navbar-nav navbar-right">
                                       
-                                      <li><a href="index.html">回首頁</a></li>
-                                      <li><a href="index7.html">RWD網頁</a></li>
-                                      <li><a href="./secondReact/hw-react9.html">React實例</a></li>
-                                      <li><a style="color:gray;" href="#">留言板</a></li>
-                                      <li><a href="table7.html" target="p2">新增表格</a></li>
-                                      <li><a href="ajaxCase.html">AJAX實例</a></li>
-                                     <li><a href="tax_count7.html"  target="p2">稅金計算表</a></li>
-                                      <li><a href="countSum7.html"  target="p2" >等差數列的和</a></li>
-                                      <li><a href="./scssProject/sassDemo2.html"  target="p2" >SCSS實例</a></li>
+                                      <li><a href="../index.html">回首頁</a></li>
+                                      <li><a href="../index7.html">RWD網頁</a></li>
+                                      <li><a href="../secondReact/hw-react9.html" >React實例</a></li>
+                                      <li><a  href="../hw-find2.html">留言板</a></li>
+                                      <li><a href="../table7.html" target="p2">新增表格</a></li>
+                                      <li><a href="../ajaxCase.html">AJAX實例</a></li>
+                                     <li><a href="../tax_count7.html"  target="p2">稅金計算表</a></li>
+                                      <li><a href="../countSum7.html"  target="p2" >等差數列的和</a></li>
+                                         <li><a style="color:gray;" target="p2" >SCSS實例</a></li>
 
                                 </ul>
                               
@@ -81,7 +87,7 @@
            
            <main id="wrapper" style="overflow: hidden;background-color: #a379cb;">
               
-               <div id="section_1" class="jumbotron image_background">
+               <div id="section_1" class="jumbotron image_background" style="background-color: #a379cb;">
                    <div class="row">
                    <div class="container">
                    <div>
@@ -96,73 +102,97 @@
                        </div></div></div>
                       <!-- Wrapper for slides -->
         <style>
-                 .mgBroad{
-                     background-color: #A53154 ; 
-                     color:white;
-                     border-radius: 10px 20px 20px 10px;
-                     height: 400px;
-                     width: 250px;
-                     padding: 5px 10px;
-                     box-shadow: 10px 10px 5px #888888;
-                 }
             
-               .mgBroad .btn{
-                   background-color: #990000; 
-                   color:white;
-                   padding: 5px;
-                   border-radius: 5px;
-               }
-          </style>
-                       
-               <div id="section_2" class="jumbotron" style="background-color: #a379cb;padding: 0;height:600px;">
-                     
-                 <div style="padding:15px;">
-                    <h1 style="font-size: 21px;color:white;">jQuery: 留言板-新增留言 </h1>  <br/>
-                 </div>
-                     <div class="container">
+        </style>
+                
+                
+               <div id="section_2" class="jumbotron" style="background-color: #a379cb;padding-top: 0px;padding-bottom: 0px;">
+                    <div style="padding:0 15px ;"><h1 style="font-size: 21px;color:white;height:30px;">SCSS實例 :</h1>  <br/></div>     
+                
+                    <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
                                 <div class="content_list">
                                     
-                                 <ul class="comments" style="padding-left: 10px;list-style-type: none;">
-                                     <li class="comment mgBroad">
-                                          <div>
-                                                <h1 style="font-size:21px;">留言板   <i class="fas fa-sticky-note"></i></h1><hr/>
-                                                <label style="font-size:21px;">請輸入內容</label>  
-                                                <input style="color:black;"type="text" />
-                                                <button type="button" style="font-size:21px;" class="btn reply_Button btn-primary">新增留言</button><hr/>
-
-                                           </div>
-                                           <ul class="replies">
-                                                <li class="reply">test</li>  
-                                           </ul>
+                                 <ul class="comments">
+                                     <li class="comment ">
+<!--                                           <h2 style="color:white;font-size: 21px;">比較square 跟 circle</h2> -->
+                                         <p>在scss檔案夾中 有四個.scss檔案 </p> 
+                                         <p>其中 tool.scss  的內容 </p>
+                                        <p style="color:white;">@import 'variable.scss';<br/>
+@import 'mixin.scss';<br/>
+@import 'content.scss';</p>
+                                         
+                                             <p>其中 _content.scss  的內容</p>
+                                         <p style="color:white;">.square{ <br/>
+    <span style='white-space:pre;'>    </span>color:$square-color;  <br/>
+    <span style='white-space:pre;'>    </span>border:1px solid black;<br/>
+    <span style='white-space:pre;'>    </span>@include height(300);<br/>
+    <span style='white-space:pre;'>    </span>@include width(200);<br/>
+    <span style='white-space:pre;'>    </span>@include bg-color;<br/>
+    <span style='white-space:pre;'>    </span>@include add-border-radius(10);<br/>
+  }<br/>
+  .circle{<br/>
+    <span style='white-space:pre;'>    </span>color:$circle-color;<br/>
+  }</p>
+                                         <p >其中 _mixin.scss  的內容</p>
+                                         <p style="color:white;">@mixin add-border-radius($radius){<br/>
+  <span style='white-space:pre;'>      </span>   border-radius:#{$radius}px;<br/>
+   <span style='white-space:pre;'>    </span>}<br/>
+   <span style='white-space:pre;'>    </span>@mixin bg-color{<br/>
+     <span style='white-space:pre;'>      </span>background-color:brown;<br/>
+   <span style='white-space:pre;'>    </span>}<br/>
+   <span style='white-space:pre;'>    </span>@mixin height($height){<br/>
+     <span style='white-space:pre;'>      </span>height:#{$height}px;<br/>
+   <span style='white-space:pre;'>    </span>}<br/>
+   <span style='white-space:pre;'>    </span>@mixin width($width){<br/>
+     <span style='white-space:pre;'>      </span>width:#{$width}px;<br/>
+  }
+  </p>
+                                          <p>其中 _variable.scss  的內容</p>
+                                         <p style="color:white;">$square-color:red;<br/>
+$circle-color:green;</p>
+                                         <p>scss轉譯成css後</p>
+                                         <p>CSS檔案夾 裡面的 tool.css 內容如下
+                                        </p>
+                                         <p style="color:white;">
+                                         .square {<br/>
+  <span style='white-space:pre;'>    </span>   color: red;<br/>
+    <span style='white-space:pre;'>    </span> border: 1px solid black;<br/>
+    <span style='white-space:pre;'>    </span> height: 300px;<br/>
+    <span style='white-space:pre;'>    </span> width: 200px;<br/>
+    <span style='white-space:pre;'>    </span> background-color: brown;<br/>
+    <span style='white-space:pre;'>    </span> border-radius: 10px;<br/>
+  }<br/>
+  
+  .circle {<br/>
+    <span style='white-space:pre;'>    </span> color: green;<br/>
+  }
+                                         </p>
+                                         <p>畫面效果如下</p>
+                                         
+                                           
+                                          <div class="square"> square</div>
+                                          <div class="circle">circle</div>
                                      </li>
                                    </ul>
                                 </div>
                                 </div>
                             </div>
-                          <div class="col-xs-12 col-sm-6"></div>
+                          <div class="col-xs-12 col-sm-6">
+                              
+                          </div>
                      </div>
                 </div>
-                      
-               
-              <script>
-                          $(function(){
-                              $(".reply_Button").click(function(){
-                                  var div=$(".reply_Button").parent();
-                                  var input=div.children("input");
-                                  var value=input.val();
-
-                                  var newReply=$("<li></li>").html(value).addClass("reply");
-                                  input.val("");
-                                  var li=$(".reply_Button").parents(".comment");
-                                  var replies=li.find(".replies")
-                                   replies.append(newReply);
-
-                              });        
-                          });
-        
-              </script>
+                <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+                <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+           <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+           
+           
+                <script src="js/App.js"></script> 
+                
+     
                   <footer id="main_footer" class="jumbotron"  style="background-color: #000000">
                     <div class="container">
                         <div class="row">
@@ -170,7 +200,7 @@
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-3" style="padding: 0">
                                          <a class="navbar-brand" href="#">
-                                            <img src="./image/Logo2.png" style="height:39px;">
+                                            <img src="../image/Logo2.png" style="height:39px;">
                                         </a>
                                     </div>
                                     
@@ -180,10 +210,10 @@
                                         <div class="link_list"> 
                                             <h5 class="_title">作品集1</h5>
                                             <ul>
-                                                <li><a style="color: gray;" href="index.html" target="p2">Bootstrap網站</a></li>
-                                                <li><a style="color: gray;" href="index7.html" target="p2">RWD網站</a></li>
-                                                <li><a style="color: gray;" href="./secondReact/hw-react9.html" target="p2">React實例</a></li>
-                                                <li><a style="color: gray;" href="hw-find2.html"target="p2">留言板</a></li>
+                                                <li><a style="color: gray;" href="../index.html" target="p2">Bootstrap網站</a></li>
+                                                <li><a style="color: gray;" href="../index7.html" target="p2">RWD網站</a></li>
+                                                <li><a style="color: gray;" target="p2">React實例</a></li>
+                                                <li><a style="color: gray;" href="../hw-find2.html"target="p2">留言板</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -191,11 +221,12 @@
                                         <div class="link_list"> 
                                              <h5 class="_title">作品集2</h5>
                                             <ul>
-                                                <li><a style="color: gray;"href="table7.html" target="p2">新增表格</a></li>
-                                                <li><a style="color: gray;"href=" ajaxCase.html" target="p2">AJAX實例</a></li>
-                                                <li><a style="color: gray;"href="tax_count7.html" target="p2">稅金計算表</a></li>
-                                                 <li><a style="color: gray;"href="countSum7.html" target="p2" >等差數列計算</a></li>
-                                                 <li><a style="color: gray;" href="./scssProject/sassDemo2.html"  target="p2" >SCSS實例</a></li>
+                                                <li><a style="color: gray;"href="../table7.html" target="p2">新增表格</a></li>
+                                                <li><a style="color: gray;"href="../ajaxCase.html" target="p2">AJAX實例</a></li>
+                                                <li><a style="color: gray;"href="../tax_count7.html" target="p2">稅金計算表</a></li>
+                                                 <li><a style="color: gray;"href="../countSum7.html" target="p2" >等差數列計算</a></li>
+                                                 <li><a style="color: gray;" target="p2" >SCSS實例</a></li>
+                                                
                                             </ul>
                                         </div>
                                     </div>

@@ -1,0 +1,13 @@
+@mixin add-border-radius($radius){
+    border-radius:#{$radius}px;
+  }
+  @mixin bg-color{
+    background-color:brown;
+  }
+  @mixin height($height){
+    height:#{$height}px;
+  }
+  @mixin width($width){
+    width:#{$width}px;
+  }
+  

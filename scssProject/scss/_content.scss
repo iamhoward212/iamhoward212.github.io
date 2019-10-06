@@ -1,0 +1,11 @@
+.square{
+    color:$square-color;  
+    border:1px solid black;
+    @include height(300);
+    @include width(200);
+    @include bg-color;
+    @include add-border-radius(10);
+  }
+  .circle{
+    color:$circle-color;
+  }
