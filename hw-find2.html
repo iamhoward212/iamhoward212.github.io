@@ -114,7 +114,7 @@
                }
           </style>
                        
-               <div id="section_2" class="jumbotron" style="background-color: #a379cb;padding: 0;height:600px;">
+               <div id="section_2" class="jumbotron" style="background-color: #a379cb;padding: 0;">
                      
                  <div style="padding:15px;">
                     <h1 style="font-size: 21px;color:white;">jQuery: 留言板-新增留言 </h1>  <br/>
@@ -122,8 +122,7 @@
                      <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
-                                <div class="content_list">
-                                    
+                                <div class="content_list">     
                                  <ul class="comments" style="padding-left: 10px;list-style-type: none;">
                                      <li class="comment mgBroad">
                                           <div>
@@ -131,7 +130,6 @@
                                                 <label style="font-size:21px;">請輸入內容</label>  
                                                 <input style="color:black;"type="text" />
                                                 <button type="button" style="font-size:21px;" class="btn reply_Button btn-primary">新增留言</button><hr/>
-
                                            </div>
                                            <ul class="replies">
                                                 <li class="reply">test</li>  
@@ -141,9 +139,34 @@
                                 </div>
                                 <a style="color:#ade0d7;" href="https://github.com/iamhoward212/iamhoward212.github.io/blob/master/hw-find2.html" target="p2">請參考本網頁程式碼</a>
                                 </div>
-                                
+                                <div class="col-xs-12 col-sm-6">
+                                   
+
+                                    <h2 style="font-size:21px;color:white;">使用方式</h2>
+                                    <h2 style="font-size:21px;color:white;">請輸入要說的話，按下"新增留言"按鈕，即可看到下方出現您剛才輸入的內容。</h2>
+                                    <h2 style="font-size:21px;color:white;">使用到的jQuery:</h2>
+                                    <h2 style="font-size:21px;color:white;">.parent( ), .parents( ), .children( ), .val( ), .html( ), .addClass( ), .find( ), .append( )</h2>
+                                    <h2 style="font-size:21px;color:white;">jQuery程式碼:</h2>
+                                    <h2 style="font-size:21px;color:blue;background-color: white;">
+                                        $(".reply_Button").click(function(){ <br/>
+                                            <span style='white-space:pre;'>    </span>          var div=$(".reply_Button").parent();<br/>
+                                            <span style='white-space:pre;'>    </span>var input=div.children("input");<br/>
+                                            <span style='white-space:pre;'>    </span>var value=input.val();<br/>
+          
+                                            <span style='white-space:pre;'>    </span>var newReply=$("li").html(value).addClass("reply");<br/>
+                                            <span style='white-space:pre;'>    </span>input.val("");<br/>
+                                            <span style='white-space:pre;'>    </span>var li=$(".reply_Button").parents(".comment");<br/>
+                                            <span style='white-space:pre;'>    </span>var replies=li.find(".replies")<br/>
+                                            <span style='white-space:pre;'>    </span>replies.append(newReply);<br/>
+                                 
+                                        });        
+                                        
+                                    
+                                    </h2>
+                                    <h2 style="font-size:21px;color:white;"></h2>
+                                </div>
                             </div>
-                          <div class="col-xs-12 col-sm-6"></div>
+                         
                      </div>
                 </div>
                       

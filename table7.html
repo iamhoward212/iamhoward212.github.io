@@ -23,7 +23,7 @@
 <script src="https://kit.fontawesome.com/951b56ff70.js"></script>   
         <script src="scoll.js"></script> 
         <script src="colorChange.js"></script> 
-        <!-- <script src="bgColorChange.js"></script>  -->
+        <script src="table.js"></script> 
         
 <link rel="stylesheet" href="./css-2/nav.css">
 <link rel="stylesheet" href="./css-2/section_bakcground.css"> 
@@ -126,31 +126,11 @@
                                           <div style=" box-shadow: 10px 10px 5px #888888;height:450px;width:390px;border: 1px solid black;background-color:#a53154;border-radius: 10px;padding: 20px;">
    <style>
         .product_options_table{
-            /* border: 1px solid black; */
+         
             padding:2px;
             
         }
-        /* .mgBroad{
-                   
-                   box-shadow: 10px 10px 5px #888888;
-               } */
-
-        /* @media screen and (min-width: 768px){
-            #title{ 
-                font-size:50px;
-            }
-
-
-        } */
         
-
-
-
-        /* @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-} */
     </style>
     
     
@@ -188,58 +168,7 @@
     
         </div>
         <script>
-                function findTbody(){
-                  var tbody=$('.product_options_table').find('tbody');  
-                    return tbody;
-                     
-                }
-                function createRow(){
-                    var row=$('.tmp')[0];
-                    return $(row).clone(true,true);
-                }
-                function addRow(index){
-                    var tbody=findTbody();
-                   
-                    var newRow=createRow();
-                    newRow.attr('data-id',index);
-                    newRow.removeClass('tmp');
-                    var productIDTd=newRow.find('.product_id');
-                    productIDTd.html(index);
-                    
-                    var productNameInput=newRow.find('.product_name>input');
-                    var optionsName="product[option]["+index+"][name]";
-                    productNameInput.attr("name",optionsName)
-                    
-                   
-                    tbody.append(newRow);
-                }
-                function deleteRow(data_id){
-                    var tbody=findTbody();
-                    var str='tr[data-id='+data_id+']';
-                    var tr=tbody.find(str);     
-                    
-                    if(tr.length>0){
-                        tr.remove();
-                    }
-                    //console.log(tr[0].outerHTML);
-                    
-                }
-                var counterIndex=0;
-                $(function(){
-                   $(".add_Button").click(function(){
-                        addRow(counterIndex);
-                       counterIndex+=1;
-                       
-                })
-                $(".delete_Button").click(function(){
-                    var tr=$(this).closest("tr");
-                    var data_id=tr.data('id');
-                   
-                    deleteRow(data_id);
-                })  
-                })
-               
-    
+              
         </script>
     
 
@@ -249,31 +178,21 @@
                                 </div>
                                 <a style="color:#ade0d7;" href="https://github.com/iamhoward212/iamhoward212.github.io/blob/master/table7.html" target="p2">請參考本網頁程式碼</a>
                                 </div>
-                            </div>
-                          <div class="col-xs-12 col-sm-6"></div>
+                            
+                          <div class="col-xs-12 col-sm-6">
+                            <h2 style="color:white;font-size:21px">使用方式</h2>
+                            <h2 style="color:white;font-size:21px">請按下 "增加: 行"，下方立即出現增加的行。<br/>請按下"刪除" ， 該行立即被刪除。</h2>
+                            
+                            <h2 style="color:white;font-size:21px">使用到的jQuery:</h2>
+                            <h2 style="color:white;font-size:21px">.click( ), .find( ), .clone( ), .attr( ), removeClass( ), .html( ), closet( ), .data( ) </h2>
+                            <a style="color:#ade0d7;" href="https://github.com/iamhoward212/iamhoward212.github.io/blob/master/table.js" target="p2">請參考jQuery程式碼</a>
+
+                          </div>
+                          </div>
                      </div>
                 </div>
                       
                
-<!--
-              <script>
-                          $(function(){
-                              $(".reply_Button").click(function(){
-                                  var div=$(".reply_Button").parent();
-                                  var input=div.children("input");
-                                  var value=input.val();
-
-                                  var newReply=$("<li></li>").html(value).addClass("reply");
-                                  input.val("");
-                                  var li=$(".reply_Button").parents(".comment");
-                                  var replies=li.find(".replies")
-                                   replies.append(newReply);
-
-                              });        
-                          });
-        
-              </script>
--->
                <footer id="main_footer" class="jumbotron"  style="background-color: #000000">
                     <div class="container">
                         <div class="row">

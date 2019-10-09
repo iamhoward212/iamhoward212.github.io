@@ -112,25 +112,32 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
                                 <div class="content_list">
-                                    
                                  <ul class="comments">
                                      <li class="comment ">
                                            <h2 style="color:white;font-size: 21px;">郵遞區號選擇器</h2> 
                                             <ul >
                                                 <li><h2 style="font-size: 21px;color:white;">以React達到郵遞區號選擇器的效果</h2></li>
                                                 <li><h2 style="font-size: 21px;color:white;">加入外觀樣式 Google Material Component Web React</h2></li>
-                                                <li><h2 style="font-size: 21px;color:white;">當發票類型，郵寄選項，郵遞區號，地址都填入後，SUBMIT按鈕會出現 </h2></li>
-                                            </ul>    
-                                            <div style="background-color: #A379cb;">  <div id="app"></div> </div>           
-                                          
-                                     </li>
+                                                <li><h2 style="font-size: 21px;color:white;">當發票類型，郵寄選項，郵遞區號，地址都填入後，SUBMIT按鈕會出現，按下SUBMIT即可將資料送出 </h2></li>
+                                            </ul>  <br/>
+                                            <h2 style="color:white;font-size: 21px;">React 的思考過程</h2> 
+                                            <ul>
+                                                <li><h2 style="font-size: 21px;color:white;">第一步：將 UI 拆解成 component 層級 <br/> <span style='white-space:pre;'>    </span>單一職責原則：一個 component只做一件事情。</h2></li>
+                                                
+                                                <li><h2 style="font-size: 21px;color:white;">第二步：在 React 中建立一個靜態版本<br/> <span style='white-space:pre;'>    </span>建立render 模型，並使用 props 傳遞資料。</h2></li>
+                                                <li><h2 style="font-size: 21px;color:white;">第三步：找出最少（但完整）的 UI State 的代表<br/> <span style='white-space:pre;'>    </span>避免重複代碼原則:請找出最少的呈現方式。</h2></li>
+                                                <li><h2 style="font-size: 21px;color:white;">第四步：找出你的 State 應該在哪裡</h2></li>
+                                                <li><h2 style="font-size: 21px;color:white;">第五步：加入相反的資料流<br/> <span style='white-space:pre;'>    </span>在層級深處的component 需要更新 最上層的 state。使用setState()，之後應用程式就會被更新。</h2></li>
+                                            </ul>
+                                      </li>
                                    </ul>
                                 </div>
                                 <a style="color:#ade0d7;" href="https://github.com/iamhoward212/iamhoward212.github.io/blob/master/secondReact/hw-react9.html" target="p2">請參考本網頁程式碼</a>
                                 </div>
-                            </div>
+                            
                           <div class="col-xs-12 col-sm-6">
-                           
+                            <div style="background-color: #A379cb;">  <div id="app"></div> </div>
+                          </div>
                           </div>
                      </div>
                 </div>
