@@ -23,7 +23,7 @@
 <script src="https://kit.fontawesome.com/951b56ff70.js"></script>   
         <script src="scoll.js"></script> 
         <script src="colorChange.js"></script> 
-        <!-- <script src="bgColorChange.js"></script>  -->
+        <script src="ajaxCase.js"></script> 
         
 <link rel="stylesheet" href="./css-2/nav.css">
 <link rel="stylesheet" href="./css-2/section_bakcground.css"> 
@@ -97,42 +97,54 @@
                        </div></div></div>
                       <!-- Wrapper for slides -->
                        
-               <div id="section_2" class="jumbotron" style="background-color: #a379cb;padding:10px;">
+               <div id="section_2" class="jumbotron" style="background-color: #a379cb;padding:10px;margin-top:30px;">
                 <div style="padding:0 20px;">
-                    <h1 style="font-size:21px;color:white;">jQuery: AJAX實例</h1>  <br/>
+                    <!-- <h1 style="font-size:21px;color:white;">jQuery: AJAX實例</h1>  <br/> -->
                 </div>     
                 
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
                                 <div class="content_list">
+                                        <h1 style="font-size:21px;color:white;">jQuery: AJAX實例</h1>  
                                     <!-- <h1 style="font-size:21px;color:rgb(255, 255, 255);">jQuery: AJAX實例</h1> -->
                                     <h3 style="font-size:21px;color:white;"> 以GET抓取JSON資料，並將其自動產生在網頁上</h3><br/>
+                                    <h3 style="font-size:21px;color:white;"> 使用到的jQuery:</h3>
+                                    <h3 style="font-size:21px;color:white;"> $.ajax( ), .done( ), method:'GET', .css( ), .slideUp( ), .first( ), .animate( ), setInterval( ), .scroll( ), .scrollTop( ), .height( ), offset( ),  </h3>
+                                    <h3 style="font-size:21px;color:white;"> </h3>
+                                    <h3 style="font-size:21px;color:white;"> </h3>
+                                    <h3 style="font-size:21px;color:white;"> </h3>
+                                    <h3 style="font-size:21px;color:white;"> </h3>
+
+                                    <p><a style="font-size:14px;color:#ade0d7;" href="https://github.com/iamhoward212/iamhoward212.github.io/blob/master/ajaxCase.js" target="p2">請參考jQuery程式碼</a></p>
                                     <p><a style="font-size:14px;color:#ade0d7;" href="https://github.com/iamhoward212/iamhoward212.github.io/blob/master/ajaxCase.html" target="p2">請參考本網頁程式碼</a></p>
-                                    <div style="display: table" id="main"></div>
-                                    <div id="loadingView" style="width:100%;margin:auto;text-align: center;">
-                                          <button id="loadingBtn" type="button" style="height:40px;margin: 12px;">讀取下一頁</button>
-                                    </div>
-                                  
-                                     <div class="card forClone" style="display: none;">
-                                         <div class="card-image">
-                                              <image src="https://images.pexels.com/photos/2512388/pexels-photo-2512388.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></image>
-                                         </div>
-                                         <div class="card-content"> 
-                                              <p class="innerContent"> content content content <br/>
-                                                   content content content<br/>
-                                             </p>
-                                         </div>
-                                    </div> 
+                                     
                                
                                 </div>
                                 </div>
                                 
-                            </div>
-                          <div class="col-xs-12 col-sm-6"></div>
+                            
+                          <div class="col-xs-12 col-sm-6">
+                                <div style="display: table" id="main"></div>
+                                <div id="loadingView" style="width:100%;margin:auto;text-align: center;">
+                                      <button id="loadingBtn" type="button" style="height:40px;margin: 12px;">讀取下一頁</button>
+                                </div>
+                              
+                                 <div class="card forClone" style="display: none;">
+                                     <div class="card-image">
+                                          <image src="https://images.pexels.com/photos/2512388/pexels-photo-2512388.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></image>
+                                     </div>
+                                     <div class="card-content"> 
+                                          <p class="innerContent"> content content content <br/>
+                                               content content content<br/>
+                                         </p>
+                                     </div>
+                                </div>
+                          </div>
+                          </div>
                      </div>
                 </div>
-                <script>
+                <!-- <script>
                     var newPage=0;
                 function loadNewPage(page){
                     $.ajax({
@@ -213,7 +225,7 @@
                         })
                         loadPage(page);
                     })
-                </script>       
+                </script>        -->
                
                   <footer id="main_footer" class="jumbotron"  style="background-color: #000000">
                     <div class="container">
