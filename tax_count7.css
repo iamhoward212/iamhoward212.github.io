@@ -1,0 +1,45 @@
+p:hover{
+    background-color: gray;
+    cursor: cell;
+}
+#bigBox{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: #ffffcc ;
+}
+#boxTitle{
+    border:3px solid #666666;
+    border-radius: 20px 50px 50px 20px;
+    width:400px;
+    background-color: #A53190;
+    color:white;
+    box-shadow:  10px 10px 5px #888888;
+;
+    margin: 20px;
+}
+#boxPrice{
+    border:3px solid #666666;
+    border-radius: 20px 50px 50px 20px;
+    width:400px;
+    background-color: #A53190
+;
+    color:white;
+     box-shadow: 10px 10px 5px #888888;
+;
+    margin: 20px;
+
+}
+#price{
+     border:3px solid #999999; 
+     width:170px;
+     color:white;   
+}
+ #taxPrice{
+    border:3px solid #999999; 
+     width:170px;
+     color:white;  
+}

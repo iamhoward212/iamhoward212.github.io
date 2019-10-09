@@ -24,6 +24,8 @@
         <script src="scoll.js"></script> 
         <script src="colorChange.js"></script> 
         <script src="bgColorChange.js"></script> 
+        <script src="tax_count7.js"></script> 
+        
         
 <link rel="stylesheet" href="./css-2/nav.css">
 <link rel="stylesheet" href="./css-2/section_bakcground.css"> 
@@ -34,7 +36,7 @@
 <link rel="stylesheet" href="./css-2/single_phone.css">     
 <link rel="stylesheet" href="./css-2/multiple_phone.css">   
       <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
-        
+      <link rel="stylesheet" href="tax_count7.css">       
     </head>
     <body>
         
@@ -72,19 +74,7 @@
                                       <li><a href="./scssProject/sassDemo2.html"  target="p2" >SCSS實例</a></li>
                                 </ul>
                               
-<!--
-                               <ul class="nav navbar-nav navbar-right">
-                                      <li><a >首頁</a></li>
-                                      <li><a href="index7.html">RWD網頁</a></li>
-                                      <li><a href="./secondReact/index.html">React實例</a></li>
-                                      <li><a href="hw-find2.html">留言板</a></li>
-                                      <li><a href="table7.html" target="p2">新增表格</a></li>
-                                      <li><a href="./secondJQueryProject/hw-card2.html">AJAX實例</a></li>
-                                      <li><a href="tax_count7.html"  target="p2">稅金計算表</a></li>
-                                      <li><a href="countSum7.html"  target="p2" >等差數列的和</a></li>
 
-                                </ul>
--->
                           </div><!-- /.navbar-collapse -->
                         </div><!-- /.container-fluid -->
                       </nav>
@@ -98,15 +88,10 @@
                    <div class="container">
                    <div>
                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                      <!-- Indicators -->
-                      <!-- <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                      </ol> -->
+                      
                        </div></div>
                        </div></div></div>
-                      <!-- Wrapper for slides -->
+                      
     
                        
                <div id="section_2" class="jumbotron" style="background-color: #a379cb;padding:10px;">
@@ -147,109 +132,26 @@
                                 </div>
                                 <a style="color:#ade0d7;" href="https://github.com/iamhoward212/iamhoward212.github.io/blob/master/tax_count7.html" target="p2">請參考本網頁程式碼</a>
                                 </div>
-                            </div>
-                          <div class="col-xs-12 col-sm-6"></div>
+                            
+                          <div class="col-xs-12 col-sm-6">
+                                <h2 style="color:white;font-size:21px;">使用方法:</h2>
+                                <h2 style="color:white;font-size:21px;">將設定中的免稅額、稅率、購買金額設定後，按下"計算"，則可算出含稅金額及稅金。</h2>
+                            <h2 style="color:white;font-size:21px;">使用到的Javascript:</h2>
+                            <h2 style="color:white;font-size:21px;">.getElementById( ), .innerHTML( ) </h2>
+                            <a style="color:#ade0d7;" href="https://github.com/iamhoward212/iamhoward212.github.io/blob/master/tax_count7.js" target="p2">請參考Javascript程式碼</a>
+
+                          </div>
+                          </div>
                      </div>
                 </div>
                       <style>
-                    p:hover{
-                        background-color: gray;
-                        cursor: cell;
-                    }
-                    #bigBox{
-                        display: flex;
-                        justify-content: space-around;
-                        flex-wrap: wrap;
-                    }
-          
-                    body{
-                        background-color: #ffffcc ;
-                    }
-                    #boxTitle{
-                        border:3px solid #666666;
-                        border-radius: 20px 50px 50px 20px;
-                        width:400px;
-                        background-color: #A53190;
-                        color:white;
-                        box-shadow:  10px 10px 5px #888888;
-;
-                        margin: 20px;
-                    }
-                    #boxPrice{
-                        border:3px solid #666666;
-                        border-radius: 20px 50px 50px 20px;
-                        width:400px;
-                        background-color: #A53190
-;
-                        color:white;
-                         box-shadow: 10px 10px 5px #888888;
-;
-                        margin: 20px;
-
-                    }
-                    #price{
-                         border:3px solid #999999; 
-                         width:170px;
-                         color:white;   
-                    }
-                     #taxPrice{
-                        border:3px solid #999999; 
-                         width:170px;
-                         color:white;  
-                    }
+                 
                 </style>
     <script>
         
-        function clickMe(){
-            var taxRate=document.getElementById("inputTax");
-            var taxAmount=Number(taxRate.value);
-            var amount=document.getElementById("inputValue");
-            var amountNumber= Number(amount.value);
-            var taxFree=document.getElementById("taxFree");            
-            var taxFree=Number(taxFree.value);
-           
-            
-            if(amountNumber>=taxFree){
-                 var total=(amountNumber-taxFree)*(taxAmount/100)+amountNumber;
-                 var priceAmout=document.getElementById("price");
-                 priceAmout.innerHTML="$"+total;
-                var taxPrice=document.getElementById("taxPrice");
-                var taxtax=total-amountNumber;
-                taxPrice.innerHTML="$"+taxtax;
-            }else{
-                var total=Number(amount.value);
-                 var priceAmout=document.getElementById("price");
-                 priceAmout.innerHTML="$"+total;
-                var taxPrice=document.getElementById("taxPrice");
-                
-                taxPrice.innerHTML="$"+0;
-            };
-            };            
-         
-        
-       
     </script>
 
                
-<!--
-              <script>
-                          $(function(){
-                              $(".reply_Button").click(function(){
-                                  var div=$(".reply_Button").parent();
-                                  var input=div.children("input");
-                                  var value=input.val();
-
-                                  var newReply=$("<li></li>").html(value).addClass("reply");
-                                  input.val("");
-                                  var li=$(".reply_Button").parents(".comment");
-                                  var replies=li.find(".replies")
-                                   replies.append(newReply);
-
-                              });        
-                          });
-        
-              </script>
--->
                   <footer id="main_footer" class="jumbotron"  style="background-color: #000000">
                     <div class="container">
                         <div class="row">
