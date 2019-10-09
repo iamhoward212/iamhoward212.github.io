@@ -24,7 +24,7 @@
         <script src="scoll.js"></script> 
         <script src="colorChange.js"></script> 
         <script src="bgColorChange.js"></script> 
-        
+        <script src="countSum7.js"></script> 
 <link rel="stylesheet" href="./css-2/nav.css">
 <link rel="stylesheet" href="./css-2/section_bakcground.css"> 
 <link rel="stylesheet" href="./css-2/carousel2.css">
@@ -34,7 +34,7 @@
 <link rel="stylesheet" href="./css-2/single_phone.css">     
 <link rel="stylesheet" href="./css-2/multiple_phone.css">   
       <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
-        
+      <link rel="stylesheet" href="countSum7.css">
     </head>
     <body>
         
@@ -94,23 +94,7 @@
                        </div></div>
                        </div></div></div>
                       <!-- Wrapper for slides -->
-        <style>
-                 .mgBroad{
-                     background-color: chocolate; 
-                     color:white;
-                     border-radius: 10px 50px 50px 10px;
-                     height: 500px;
-                     width: 200px;
-                     padding: 5px 10px;
-                     box-shadow: 10px 10px 5px #888888;
-                 }
-            
-               .mgBroad .btn{
-                   background-color: #990000; 
-                   color:white;
-                   padding: 5px;
-                   border-radius: 5px;
-               }
+       
           </style>
                        
                <div id="section_2" class="jumbotron" style="background-color: #a379cb;padding:0;height:500px;padding: 10px;height:600px;">
@@ -123,18 +107,7 @@
                             <div class="col-xs-12 col-sm-6">
                                 <div class="content_list">
                                  
-          <style>
-             
-              .box{
-                  border: 1px solid gray;
-                  height:300px;
-                  width:300px;
-                  background-color: #a53154;
-                  color:white;
-                  border-radius: 20px;
-                  padding: 20px;
-              }
-          </style>
+        
           <!-- <h1>輸入終值，算出和</h1>   -->
           <div class="box"  style="box-shadow: 10px 10px 5px #888888;">
              <p style="font-size:21px;">起始值 0</p>
@@ -145,45 +118,33 @@
              <p style="font-size:21px;">計算結果</p>   
              <p style="font-size:21px;" id="sumResult">和</p>
           
-          </div>   
+          </div> 
+          <br/>  
           <a style="color:#ade0d7;" href="https://github.com/iamhoward212/iamhoward212.github.io/blob/master/countSum7.html
 ">請參考本網頁程式碼</a>
             
                                  
                                 </div>
                                 </div>
-                            </div>
-                          <div class="col-xs-12 col-sm-6"></div>
+                           
+                          <div class="col-xs-12 col-sm-6">
+                             <h2 style="color:white;font-size:21px">使用方式:</h2>
+                             <h2 style="color:white;font-size:21px">請填入終值，按下"計算"，則可以得到等差數列的和。</h2>
+                             <h2 style="color:white;font-size:21px">使用到的Javascript:</h2>
+                             <h2 style="color:white;font-size:21px">.getElementById( ), .value, if else判斷式, for迴圈</h2>
+                             <h2 style="color:white;font-size:21px"></h2>
+                             <h2 style="color:white;font-size:21px"></h2>
+                             <a style="color:#ade0d7;" href="https://github.com/iamhoward212/iamhoward212.github.io/blob/master/countSum7.js
+                             ">請參考Javascript程式碼</a>
+
+                          </div>
+                          </div>
                      </div>
                 </div>
-                  <style>
-          #sumResult{
-              border:1px solid blue; 
-              width:50px;
-          }
-      </style>      
+                    
                
               <script>
-                        var calculater=function(){
-              var inputValue=document.getElementById("inputNumber").value;
-              console.log(inputValue)
-              var sum=0;
-              
-              
-               if( inputValue<=0  ){
-                      alert("end value should larger than 0");
-                }else{ 
-                        for(var i=0 ; i<=inputValue   ; i++ ){
-                           sum+=i;
-                        }
-                    document.getElementById("sumResult").innerHTML=sum;
-                      } 
-              }
-              
-          var clickMe=function(){
-              calculater();
-          }
-        
+           
         
               </script>
                   <footer id="main_footer" class="jumbotron"  style="background-color: #000000">

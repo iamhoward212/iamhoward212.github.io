@@ -1,0 +1,13 @@
+.box{
+    border: 1px solid gray;
+    height:300px;
+    width:300px;
+    background-color: #a53154;
+    color:white;
+    border-radius: 20px;
+    padding: 20px;
+}
+#sumResult{
+    border:1px solid blue; 
+    width:50px;
+}
